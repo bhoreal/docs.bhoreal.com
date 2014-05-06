@@ -1,4 +1,1 @@
-docs.bhoreal.com
-================
-
-Documentation for Photoduino
+http://docs.bhoreal.com
