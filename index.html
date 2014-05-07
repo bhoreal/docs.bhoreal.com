@@ -18,69 +18,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width">
 
-  <title>SmartCitizen Docs</title>
+  <title>Your Project</title>
 
   <!-- Flatdoc -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src='http://rstacruz.github.io/flatdoc/v/0.8.0/legacy.js'></script>
-  <script src='assets/flatdoc-mod.js'></script>
-
-  <!-- Sammy.js for routing -->
-  <script src="assets/sammy-0.7.4.min.js"></script>
-
-  <!-- Favicon -->
-  <link href="assets/favicon.ico" type="image/x-icon" rel="icon">
-  <link href="assets/favicon.ico" type="image/x-icon" rel="shortcut icon">
+  <script src='http://rstacruz.github.io/flatdoc/v/0.8.0/flatdoc.js'></script>
 
   <!-- Flatdoc theme -->
   <link  href='http://rstacruz.github.io/flatdoc/v/0.8.0/theme-white/style.css' rel='stylesheet'>
-  <script src='assets/theme-white.js'></script>
+  <script src='http://rstacruz.github.io/flatdoc/v/0.8.0/theme-white/script.js'></script>
 
-  <!-- FlatDoc addons by Spark -->
-  <link href='assets/style.css' rel='stylesheet'>
-  
   <!-- Meta -->
-  <meta content="Bhoreal" property="og:title">
-  <meta content="Bhoreal documentation" name="description">
-   <!--meta property="og:image" content="http://www.smartcitizen.me/img/alogo_sc_200x200.png"-->
+  <meta content="Your Project" property="og:title">
+  <meta content="Your Project description goes here." name="description">
 
   <!-- Initializer -->
   <script>
     Flatdoc.run({
-      fetcher: Flatdoc.file('docs/start.md')
-    });
+	  fetcher: Flatdoc.github('bhoreal/docs.bhoreal.com')
+	});
   </script>
 </head>
 <body role='flatdoc'>
-
-  <div id="docs">
-    <div class='header'>
-      <div class='left'>
-        <a href="https://docs.bhoreal.com">
-          <!--img src="assets/smartcitizenlogo-doc.png" id="logo"--> 
-        </a>
-      </div>
-      <div class='right'>
-        <iframe src="http://ghbtns.com/github-btn.html?user=fablabbcn&amp;repo=SmartCitizen.doc&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-      </div>
+  <div class='content-root'>
+    <div class='menubar'>
+      <div class='menu section' role='flatdoc-menu'></div>
     </div>
-
-    <div class='content-root'>
-      <div class='menubar'>
-        <div class='menu section' role='flatdoc-menu'></div>
-        <div class='credits section'>
-          <p>This documentation is proudly based in <a href="http://ricostacruz.com/flatdoc/">FlatDoc</a> an amazing documentation template engine. Some template features are based on the Spark project documentation by <a href="https://www.spark.io/">Spark Labs, Inc.</a> All the documentation is release as <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">Creative Commons Attribution-ShareAlike 3.0 license</a></p>
-        </div>
-      </div>
-      <div role='flatdoc-content' class='content'></div>
-    </div>
-
-    <div id="markdown" style="display:none;">
-    </div>
+    <div role='flatdoc-content' class='content'></div>
   </div>
-
-  <!-- Custom -->
-  <script src='assets/main.js'></script>
-
 </body>
 </html>
