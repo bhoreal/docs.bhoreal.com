@@ -3,7 +3,7 @@ Getting started
 
 ### What's in the box
 
-![Spark Core in box](images/core-in-box.jpg)
+![Spark Core in box](images/bhoreal.jpg)
 
 Congratulations on being the owner of a brand new Spark Core! Go ahead, open the box, and let's talk about what you see. Your box should include:
 
