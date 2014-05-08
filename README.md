@@ -1,10 +1,9 @@
 ##Boreal Documentation
-=
+-
 
+Here you'll find the documentation for the [Bhoreal](http://www.bhoreal.com) controller.
 
-**Here you'll find the documentation for the Bhoreal controller.**
-
-To view this documentation, visit our website, where the documentation is hosted.
+To view this documentation, visit [our website](http://docs.bhoreal.com), where the documentation is hosted.
 
 ### Organization
 
