@@ -7,3 +7,11 @@ Welcome
 
 Congratulations on being the owner of a brand new Bhoreal controller! The Bhoreal team wants to thank you for being here, for purchasing a kit, joining the community and taking part on this adventure.
 
+
+This documentation is managed by Bhoreal, but supported by the community. We welcome contributions such as:
+
+* Edits to improve grammar or fix typos
+* Additional annotated examples for others to follow
+* Additional content that would help provide a complete understanding of the Bhoreal controller
+* Translations to other languages
+* Making a contribution is as simple as forking this repository, making edits to your fork, and contributing those edits as a pull request. For more information on how to make a pull request, see Github's documentation.
