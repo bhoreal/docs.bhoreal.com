@@ -1,6 +1,6 @@
 Getting started
 =====
-
+	
 ### What's in the box
 
 ![Spark Core in box](images/bhoreal.jpg)
