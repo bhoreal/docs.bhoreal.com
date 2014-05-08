@@ -17,11 +17,11 @@ This documentation is built using Flatdoc, an awesome tool for building beautifu
 
 ### Contributions
 
-This documentation is managed by Spark, but supported by the community. We welcome contributions such as:
+This documentation is managed by Bhoreal, but supported by the community. We welcome contributions such as:
 
 * Edits to improve grammar or fix typos
 * Additional annotated examples for others to follow
-* Additional content that would help provide a complete understanding of the Spark platform
+* Additional content that would help provide a complete understanding of the Bhoreal controller
 * Translations to other languages
 * Making a contribution is as simple as forking this repository, making edits to your fork, and contributing those edits as a pull request. For more information on how to make a pull request, see Github's documentation.
 
@@ -29,4 +29,8 @@ This documentation is managed by Spark, but supported by the community. We welco
 
 These files have been made available online through a Creative Commons Attribution-ShareAlike 3.0 license.
 
-You are welcome to distribute, remix, and use these files for commercial purposes. If you do so, please attribute the original design to Spark Labs, Inc. both on the website and on the physical packaging of the product or in the instruction manual. All derivative works must be published under the same or a similar license.
+You are welcome to distribute, remix, and use these files for commercial purposes. If you do so, please attribute the original design both on the website and on the physical packaging of the product or in the instruction manual.
+
+All derivative works must be published under the same or a similar license.
+
+This documentation is proudly based in FlatDoc an amazing documentation template engine. Some template features are based on the Spark project documentation by Spark Labs, Inc. 
