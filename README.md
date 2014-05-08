@@ -7,7 +7,7 @@ To view this documentation, visit [our website](http://docs.bhoreal.com), where 
 
 ### Organization
 
-The majority of the content herein is stored in the docs directory as a set of Markdown files. Images are stored in the images directory. The root directory contains the HTML, CSS, and JavaScript that makes everything pretty and organized.
+The content herein is stored in the docs directory as a Markdown file. Images are stored in the images directory. The root directory contains the HTML, CSS, and JavaScript that makes everything pretty and organized.
 
 ### Attributions
 
