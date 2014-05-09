@@ -14,5 +14,5 @@ This documentation is managed by Bhoreal, but supported by the community. We wel
 * Edits to improve grammar or fix typos
 * Additional annotated examples for others to follow
 * Additional content that would help provide a complete understanding of the Bhoreal controller
-* Translations to other languages
-* Making a contribution is as simple as forking this repository, making edits to your fork, and contributing those edits as a pull request. For more information on how to make a pull request, see Github's documentation.
+
+Making a contribution is as simple as forking this repository, making edits to your fork, and contributing those edits as a pull request. For more information on how to make a pull request, see Github's documentation.
