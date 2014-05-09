@@ -13,7 +13,7 @@ The content herein is stored in the docs directory as a Markdown file. Images ar
 
 Some of this documentation is derived from the Arduino documentation, as the Arduino/Wiring language and libraries are used extensively on the Spark Core.
 
-This documentation is built using Flatdoc, an awesome tool for building beautiful documentation from simple Markdown files.
+This documentation is built using Flatdoc, an awesome tool for building beautiful documentation from simple Markdown files. Some template features are based on the Spark project documentation by Spark Labs, Inc.
 
 ### Contributions
 
@@ -32,5 +32,3 @@ These files have been made available online through a Creative Commons Attributi
 You are welcome to distribute, remix, and use these files for commercial purposes. If you do so, please attribute the original design both on the website and on the physical packaging of the product or in the instruction manual.
 
 All derivative works must be published under the same or a similar license.
-
-This documentation is proudly based in FlatDoc an amazing documentation template engine. Some template features are based on the Spark project documentation by Spark Labs, Inc. 
