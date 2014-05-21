@@ -25,31 +25,31 @@ Getting Started
 ---
 ### Open Bhoreal Test App
 ---
-Select the MIDI port
+### Select the MIDI port
 ---
-Play with color
+### Play with color
 ---
-Go further!
+### Go further!
 ---
 
 
 Protocol
 =====
 
-Serial
+### Serial
 ---
-MIDI
+### MIDI
 ---
 
 
 Hardware
 =====
 
-Mini Slim
+### Mini Slim
 ---
 
-### Microcontroller
-### Transistor
+##### Microcontroller
+##### Transistor
 ### LEDs
 ### USB port
 ### Pads
@@ -61,21 +61,21 @@ Mini Slim
 ### Schematics
 ### Eagle file
 
-Slim
+### Slim
 ---
-Slim Pro
+### Slim Pro
 ---
 
 Firmware
 =====
 
-Uploading
+### Uploading
 ---
-Code
+### Code
 ---
-Libraries
+### Libraries
 ---
-Atributions
+### Atributions
 ---
 
 
