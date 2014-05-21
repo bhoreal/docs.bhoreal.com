@@ -45,11 +45,11 @@ Protocol
 Hardware
 =====
 
-### Mini Slim
+Mini Slim
 ---
 
-#####   Microcontroller
-#####   Transistor
+### Microcontroller
+### Transistor
 ### LEDs
 ### USB port
 ### Pads
@@ -61,9 +61,9 @@ Hardware
 ### Schematics
 ### Eagle file
 
-### Slim
+Slim
 ---
-### Slim Pro
+Slim Pro
 ---
 
 Firmware
@@ -82,17 +82,17 @@ Firmware
 Software
 =====
 
-Processing
+### Processing
 ---
-Pure Data
+### Pure Data
 ---
-Max
+### Max
 ---
-Ableton
+### Ableton
 ---
-Modul8
+### Modul8
 ---
-Quartz Composer
+### Quartz Composer
 ---
 
 
