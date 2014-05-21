@@ -48,8 +48,8 @@ Hardware
 ### Mini Slim
 ---
 
-##### Microcontroller
-##### Transistor
+#####   Microcontroller
+#####   Transistor
 ### LEDs
 ### USB port
 ### Pads
