@@ -16,3 +16,94 @@ This documentation is managed by Bhoreal, but supported by the community. We wel
 * Additional content that would help provide a complete understanding of the Bhoreal controller
 
 Making a contribution is as simple as forking this repository, making edits to your fork, and contributing those edits as a pull request. For more information on how to make a pull request, see https://help.github.com/.
+
+
+Getting Started
+=====
+
+Connect via USB
+---
+Open Bhoreal Test App
+---
+Select the MIDI port
+---
+Play with color
+---
+Go further!
+---
+
+
+Protocol
+=====
+
+Serial
+---
+MIDI
+---
+
+
+Hardware
+=====
+
+Mini Slim
+---
+
+### Microcontroller
+### Transistor
+### LEDs
+### USB port
+### Pads
+### Slider
+### Reset
+### I/O Pins
+### ICSP
+### Layout
+### Schematics
+### Eagle file
+
+Slim
+---
+Slim Pro
+---
+
+Firmware
+=====
+
+Uploading
+---
+Code
+---
+Libraries
+---
+Atributions
+---
+
+
+Software
+=====
+
+Processing
+---
+Pure Data
+---
+Max
+---
+Ableton
+---
+Modul8
+---
+Quartz Composer
+---
+
+
+Case
+=====
+
+Mini
+---
+Slim/Slim Pro
+---
+
+
+Troubleshooting
+=====
