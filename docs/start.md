@@ -21,9 +21,9 @@ Making a contribution is as simple as forking this repository, making edits to y
 Getting Started
 =====
 
-Connect via USB
+### Connect via USB
 ---
-Open Bhoreal Test App
+### Open Bhoreal Test App
 ---
 Select the MIDI port
 ---
