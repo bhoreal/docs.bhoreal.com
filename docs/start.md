@@ -52,7 +52,7 @@ Hardware
 Mini Slim
 ---
 
-![Bhoreal](bhoreal_mini_front.jpg)
+![Bhoreal](images/bhoreal_mini_front.jpg)
 ![Bhoreal](images/bhoreal_mini_back.jpg)
 
 ### Microcontroller
