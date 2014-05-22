@@ -107,3 +107,5 @@ Slim/Slim Pro
 
 Troubleshooting
 =====
+
+Test de subida y sincronizacion! Alex Github!!!
