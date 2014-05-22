@@ -52,6 +52,9 @@ Hardware
 Mini Slim
 ---
 
+![Bhoreal](images/bhoreal_mini_front.jpg)
+![Bhoreal](images/bhoreal_mini_back.jpg)
+
 ### Microcontroller
 ### Transistor
 ### LEDs
@@ -64,6 +67,8 @@ Mini Slim
 ### Layout
 ### Schematics
 ### Eagle file
+
+![Bhoreal](images/bhoreal_mini_eagle.png)
 
 Slim
 ---
