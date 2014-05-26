@@ -64,8 +64,8 @@ Mini Slim
 
 ![Bhoreal](images/bhoreal_mini_back_microcontroller.jpg)
 
-The Bhoreal Mini Slim uses the ATmega32U4 microcontroller for its processing power. You can download the datasheet [http://www.atmel.com/Images/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Summary.pdf ](here).Some of its key features are as follows:
-ARM 32-bit Cortex™-M3 CPU Core
+The Bhoreal Mini Slim uses the ATmega32U4 microcontroller for its processing power. You can download the datasheet [here](http://www.atmel.com/Images/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Summary.pdf).Some of its key features are as follows:
+ARM 32-bit Cortex™-M3 CPU Core 
 72Mhz operating frequency, 1.25 DMIPS/MHz (Dhrystone 2.1)
 128KB of Flash memory
 20KB of SRAM
