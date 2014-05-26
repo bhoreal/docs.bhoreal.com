@@ -20,6 +20,8 @@ This documentation is managed by Bhoreal, but supported by the community. We wel
 
 Making a contribution is as simple as forking this repository, making edits to your fork, and contributing those edits as a pull request. For more information on how to make a pull request, see https://help.github.com/.
 
+### License
+
 Getting Started
 =====
 
