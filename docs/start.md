@@ -70,7 +70,7 @@ If you remix, transform of develop from this material, you may distribute your c
 
 To learn more about this license and others visit: http://creativecommons.org/licenses/
 
-[Bhoreal](images/bhoreal_cc-by-nc-sa-eu.png)
+[Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
 
 Getting Started
@@ -317,7 +317,7 @@ Features:
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_eagle.jpg)
 
-[Bhoreal](images/CC.jpg)
+[Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
 (#slim)
 Slim
@@ -334,11 +334,9 @@ coming soon!
 Firmware (#firmware)
 =====
 
-# Frimware
+Here is an [example] (https://github.com/bhoreal/bhoreal/blob/master/firmware/bhoreal_slim_midi/bhoreal_slim_midi.ino) of the Firmware, taken from Github.
 
-Here is an example of the Firmware, taken from [Github](https://github.com/bhoreal/bhoreal/blob/master/firmware/bhoreal_slim_midi/bhoreal_slim_midi.ino).
-
-'''
+```
 #include <Arduino.h>
 #include "Bhoreal.h"
 
@@ -365,7 +363,7 @@ void loop () {
   
 
 }
-'''
+```
 
 ### Uploading
 ---
@@ -398,7 +396,6 @@ Software
 
 Case
 =====
-# Case
 
 Mini
 ---
@@ -408,6 +405,5 @@ Slim/Slim Pro
 
 Troubleshooting
 =====
-# Troubleshooting
 
 Test de subida y sincronizacion! Alex Github!!!
