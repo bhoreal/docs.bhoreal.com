@@ -14,18 +14,16 @@ If you are one of the latter, thanks a lot for your interest in Bhoreal. We are 
 
 You can also check this project in [GitHub](https://github.com/bhoreal/bhoreal) if you want.
 
-[GitHub](https://github.com/bhoreal/bhoreal)>
-
 In any case, thank you for being here.
 
-About (#about)
+About <a name="about"></a>
 ---
 
 All Bhoreal control interfaces have a minimalist design. Its external appearance is extremely simple, with a square shape and backlit buttons, without icons or marks. They don’t generate sounds by itself. They’re a blank slate, without any autonomous function. You have to connect them to a computer and associate them to a software in order to work. When you connect Bhoreal controller to a computer, begins a startup test program and the buttons blink. Each button has its own LED and surprise! They’re RGB!
 
 Open Source philosophy is present in both hardware and software design. The firmware is Open Source and all the documentation is released under Creative Common licenses. We love Open Source and we hope you love it too!
 
-About this documentation (#about-docu)
+About this documentation <a name="about-docu"></a>
 ---
 
 This is the support page for Bhoreal documents. You can find here all the information you need to get to know all about your controller. You can test if it works correctly as soon as you take it out from the box, also reprogram the firmware in order to use Bhoreal with your favorite software applications. 
@@ -38,7 +36,7 @@ There is also a general section of **TROUBLESHOOTING** where you can find the so
 This is not a finished document and will be modified in parallel with the project evolution. It will be very welcome any kind of comment related to improve the contents or the structure itself.  
 
 
-Contributions (#contrib)
+Contributions <a name="contrib"></a>
 ---
 
 This documentation is managed by Bhoreal, but supported by the community. We welcome contributions such as:
@@ -47,7 +45,7 @@ This documentation is managed by Bhoreal, but supported by the community. We wel
 - Additional annotated examples for others to follow
 - Additional content that would help provide a complete understanding of the Bhoreal controller
 
-Making a contribution is as simple as forking this [repository](https://github.com/bhoreal/docs.bhoreal.com/tree/master/docs), making edits to your fork, and contributing those edits as a pull request. For more information on how to make a pull request, see https://help.github.com/.
+Making a contribution is as simple as forking this [repository](https://github.com/bhoreal/docs.bhoreal.com/tree/master/docs), making edits to your fork, and contributing those edits as a pull request. For more information on how to make a pull request, see [github help](https://help.github.com/).
 
 Atributions
 ---
@@ -57,7 +55,7 @@ Some of this documentation is derived from the Arduino documentation, as the Ard
 This documentation is built using Flatdoc, an awesome tool for building beautiful documentation from simple Markdown files. Some template features are based on the Spark project documentation by Spark Labs, Inc.
 
 
-License (#licens)
+License <a name="licens"></a>
 ---
 
 All the contents on this page are published under a Creative Commons license: 
@@ -72,16 +70,13 @@ If you remix, transform of develop from this material, you may distribute your c
 
 To learn more about this license and others visit: http://creativecommons.org/licenses/
 
-[Bhoreal](images/CC.jpg)
+[Bhoreal](images/bhoreal_cc-by-nc-sa-eu.png)
 
 
 Getting Started
 =====
 
-# Getting Started
-
-
-Connect via USB (#connect-usb)
+Connect via USB <a name="connect-usb"></a>
 ---
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_test_web.jpg)
@@ -95,21 +90,21 @@ Once your controller is switched on, it’s ready for use through some applicati
 
 ** ME FALTA FOTO **
 
-Open Bhoreal Test App (#testapp)
+Open Bhoreal Test App <a name="testapp"></a>
 ---
 
 You can download the test application on the following link to check if your Bhoreal works correctly and understand the communication protocol in the best way:
 
 ** ME FALTA LINK **
 
-Select the MIDI port (#midiport)
+Select the MIDI port <a name="midiport"></a>
 ---
 
 The Bhoreal Test application uses MIDI protocol to communicate with the hardware. We need to open a corresponding midi port to send and receive MIDI from Bhoreal. Bhoreal is an Arduino based project and the MIDI port appears under the name of “Arduino Leonardo”. Once the MIDI port is selected the device is ready to send and receive data. 
 
 ** ME FALTA FOTO **
 
-Play with color (#playcolor)
+Play with color <a name="playcolor"></a>
 ---
 
 The test application works as a MIDI monitor where you can see the messages of ‘you’re sending’ when you press a button or move the slider, also you can generate a sweep sequence that scans the LED screen using the same colors as the boot sequence. Here we can see how the [MIDI](#com-midi) protocol works which is detailed in the [communication section](#com-protocol). 
@@ -123,9 +118,8 @@ If you want to learn more about your Bhoreal device, you can keep reading the fo
 
 
 
-Communication Protocol (#com-protocol)
+Communication Protocol <a name="com-protocol"></a>
 =====
-# Communication Protocol
 
 Bhoreal can use two communication protocols: Serial and MIDI, 
 but the MIDI protocol is the prior and will be used for the most of available applications. 
@@ -136,7 +130,10 @@ Also it's possible that each person could use their own code and commands as ope
 
 If someone develops something interesting in this sense, we’d like to ask them to share it with the rest of the community, using any of the available tools or by making full requests to this documentation. 
 
-Serial (#com-serial)
+
+
+
+Serial <a name="com-serial"></a>
 ---
 
 The Serial communication - also known as RS-232 - is based in the serial transmission of information through a bidirectional data cable. The communication is asynchronous with 8 bit packages and always needs an additional bit for the synchronization. This makes high velocities can not be reached, being 115200 Bd (bauds) the higher one recommended for Bhoreal.
@@ -150,7 +147,10 @@ To activate the serial communication with Bhoreal it’s necessary to turn on th
 Next, we will show the available serial commands:
 Serial commands table ***
 
-MIDI (#com-midi)
+
+
+
+MIDI <a name="com-midi"></a>
 ---
 
 The MIDI communication is a specific serial protocol which were started to use in the 80’s, to communicate among digital musical instruments. The MIDI protocol has many followers maintaining the compatibility with the most of audio/video softwares in real time. 
@@ -163,7 +163,10 @@ Next, we will show the available MIDI commands:
 
 MIDI commands table ***
 
-Hardware (#hardware)
+
+
+
+Hardware <a name="hardware"></a>
 =====
 
 # Hardware
@@ -174,7 +177,7 @@ Mini Slim
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front.jpg)
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back.jpg)
 
-(#microcontroller)
+<a name="microcontroller"></a>
 ### Microcontroller
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back_microcontroller.jpg)
@@ -192,7 +195,7 @@ Some of its key features are as follows:
 - USART, SPI and I2C interfaces
 - JTAG Debug mode
 
-(#transistors)
+<a name="transistors"></a>
 ### Transistors
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back_transistor.jpg)
@@ -200,21 +203,21 @@ Some of its key features are as follows:
 There are two transistors on the PCB that have a very important role for the electronic operating: Q1 and Q2. Those *Mosfests* are in charge of the screen refresh control. Since the consumption of the LED matrix to maximum intensity exceeds the maximun the USB port allows (500 mA), we’ve chosen the strategy of multiplexing the screen control. 
 For that, we’ve made two groups of independent LEDs, which are controlled by Q2a and Q2b, they alternate to divide into two the consumption and the light intensity. Q1 is a control signal investor that acts on Q2b, while Q2a is connected directly to this signal. This frequency is controlled by firmware and is very high, so we couldn't notice the blinking of the screen. This is possible because the WS2812 has two independent VCC lines, one for the LED and the other for the digital driver WS2811, embed in the LED capsule.
 
-(#fuse)
+<a name="fuse"></a>
 ### Fuse
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back_fuse.jpg)
 
 The Bhoreal Mini Slim board has a resettable polyfuse that protects your computer's USB ports from shorts and overcurrent. Although most computers provide their own internal protection, the fuse provides an extra layer of protection. If more than 500 mA is applied to the USB port, the fuse will automatically break the connection until the short or overload is removed.
 
-(#icsp)
+<a name="icsp"></a>
 ### ICSP
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back_icsp.jpg)
 
 The connector *In Circuit Serial Programming* or commonly called ICSP allows to reprogram the microcontroller ATmega32U4 from a compatible external programmer. This method allows to restore the device bootloader completely or update it, if it’s necessary.  
 
-(#leds)
+<a name="leds"></a>
 ### LEDs 
 
 
@@ -241,14 +244,14 @@ Forward Voltage:
 - Green: 3.0-3.2V
 - Blue: 3.2-3.4V
 
-(#usbport)
+<a name="usbport"></a>
 ### USB port
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front_usb.jpg)
 
 Bhoreal Mini has a Micro USB connector that enables the connectivity between the device and the USB communication port. Simply connect it to a computer with a micro USB cable to get started.
 
-(#pads)
+<a name="pads"></a>
 ### Pads
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front_pad.jpg)
@@ -258,7 +261,7 @@ Each one of the buttons has a conductive ring at the bottom that works as a swit
 
 There are two keypad models adapted the different type of LEDs. 
 
-(#slider)
+<a name="slider"></a>
 ### Slider
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front_slider.jpg)
@@ -274,14 +277,14 @@ Features:
 - 9 mm W x 75 mm L
 
 
-(#reset)
+<a name="reset"></a>
 ### Reset
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front_reset.jpg)
 
 The Reset push button allows to reset the microcontroller and to reboot the firmware. This button activates the Reset circuit which is 100% compatible with Arduino Leonardo. 
 
-(#iopins)
+<a name="iopins"></a>
 ### I/O Pins
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front_iopins.jpg)
@@ -294,14 +297,14 @@ Features:
 
 [ VCC  A0  A1  A2  A3  A4  GND ]  
 
-(#layout)
+<a name="layout"></a>
 ### Layout
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_layout.jpg)
 
 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-(#scheme)
+<a name="scheme"></a>
 ### Schematics
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics.jpg)
@@ -309,7 +312,7 @@ Features:
 
 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-(#eagle)
+<a name="eagle"></a>
 ### Eagle file
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_eagle.jpg)
