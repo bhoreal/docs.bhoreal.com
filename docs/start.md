@@ -70,7 +70,7 @@ If you remix, transform of develop from this material, you may distribute your c
 
 To learn more about this license and others visit: http://creativecommons.org/licenses/
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
+[Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
 
 Getting Started
@@ -169,7 +169,7 @@ MIDI commands table ***
 Hardware <a name="hardware"></a>
 =====
 
-Mini
+Mini Slim
 ---
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front.jpg)
@@ -180,7 +180,7 @@ Mini
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back_microcontroller.jpg)
 
-The Bhoreal Mini uses the ATmega32U4 microcontroller for its processing power. You can download the datasheet [here](http://www.atmel.com/Images/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Summary.pdf).
+The Bhoreal Mini Slim uses the ATmega32U4 microcontroller for its processing power. You can download the datasheet [here](http://www.atmel.com/Images/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Summary.pdf).
 
 Some of its key features are as follows:
 
@@ -206,7 +206,7 @@ For that, we’ve made two groups of independent LEDs, which are controlled by Q
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back_fuse.jpg)
 
-The Bhoreal Mini board has a resettable polyfuse that protects your computer's USB ports from shorts and overcurrent. Although most computers provide their own internal protection, the fuse provides an extra layer of protection. If more than 500 mA is applied to the USB port, the fuse will automatically break the connection until the short or overload is removed.
+The Bhoreal Mini Slim board has a resettable polyfuse that protects your computer's USB ports from shorts and overcurrent. Although most computers provide their own internal protection, the fuse provides an extra layer of protection. If more than 500 mA is applied to the USB port, the fuse will automatically break the connection until the short or overload is removed.
 
 <a name="icsp"></a>
 ### ICSP
@@ -315,7 +315,7 @@ Features:
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_eagle.jpg)
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
+[Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
 (#slim)
 Slim
