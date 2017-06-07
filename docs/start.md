@@ -169,8 +169,6 @@ MIDI commands table ***
 Hardware <a name="hardware"></a>
 =====
 
-# Hardware
-
 Mini Slim
 ---
 
@@ -331,10 +329,12 @@ Slim Pro
 
 coming soon!
 
-Firmware (#firmware)
+
+<a name="firmware"></a>
+Firmware
 =====
 
-Here is an [example] (https://github.com/bhoreal/bhoreal/blob/master/firmware/bhoreal_slim_midi/bhoreal_slim_midi.ino) of the Firmware, taken from Github.
+Here is an [example](https://github.com/bhoreal/bhoreal/blob/master/firmware/bhoreal_slim_midi/bhoreal_slim_midi.ino) of the Firmware, taken from Github.
 
 ```
 #include <Arduino.h>
@@ -346,7 +346,6 @@ Here is an [example] (https://github.com/bhoreal/bhoreal/blob/master/firmware/bh
 Bhoreal Bhoreal;
 
 void setup() {
-
   //Bhoreal.begin(SLIM, BAUD);
   Bhoreal.begin(BAUD);
   // Run the startup animation
@@ -360,8 +359,6 @@ void loop () {
   Bhoreal.checkButtons();
   // Check and report the ADC states, if necessary
   Bhoreal.checkADC();
-  
-
 }
 ```
 
