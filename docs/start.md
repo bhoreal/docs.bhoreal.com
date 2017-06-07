@@ -114,7 +114,7 @@ The test application works as a MIDI monitor where you can see the messages of â
 Go further!
 ---
 
-If you want to learn more about your Bhoreal device, you can keep reading the following sections where we will explain you with details about the [hardware]() and its components, how to install the [programming environment](), the [communication protocols](#com-protocol), the [programming languages]() and the most important functions of the [firmware](), with dozens of examples that third-party software uses. 
+If you want to learn more about your Bhoreal device, you can keep reading the following sections where we will explain you with details about the [hardware](#hardware) and its components, how to install the [programming environment](), the [communication protocols](#com-protocol), the [programming languages]() and the most important functions of the [firmware](#firmware), with dozens of examples that third-party software uses. 
 
 
 
