@@ -70,6 +70,7 @@ If you remix, transform of develop from this material, you may distribute your c
 
 To learn more about this license and others visit: http://creativecommons.org/licenses/
 
+<img src="images/bhoreal_cc-by-nc-sa-eu.png" alt="CC bohreal" style="align-self: left;">
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
 
