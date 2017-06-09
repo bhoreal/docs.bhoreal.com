@@ -70,9 +70,26 @@ If you remix, transform of develop from this material, you may distribute your c
 
 To learn more about this license and others visit: http://creativecommons.org/licenses/
 
+<div id="licenseImage1"></div>
 
-<img src="images/bhoreal_cc-by-nc-sa-eu.png" alt="CC bohreal" style="align-self: left;">
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
+<script>
+
+document.getElementById("demo");
+
+jQuery('<img/>', { 
+	class: '',
+	src: 'https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png',
+	alt: 'CC license bhoreal'
+	})
+	.css("width", "150px")
+	.css("align-self", "left")
+	.appendTo('#licenseImage1');
+
+	
+</script>
+<!-- <img id="id" src="https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png" alt="CC bohreal" style="align-self: left; width:200px; float: left; "> -->
+
+
 
 
 
