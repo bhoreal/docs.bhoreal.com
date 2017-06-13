@@ -72,35 +72,13 @@ To learn more about this license and others visit: http://creativecommons.org/li
 
 <div id="licenseImage1"></div>
 
-<script>
-
-document.getElementById("demo");
-
-jQuery('<img/>', { 
-	class: '',
-	src: 'https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png',
-	alt: 'CC license bhoreal'
-	})
-	.css("width", "150px")
-	.css("align-self", "left")
-	.appendTo('#licenseImage1');
-
-	
-</script>
-<!-- <img id="id" src="https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png" alt="CC bohreal" style="align-self: left; width:200px; float: left; "> -->
-
-
-
-
-
-
 Getting Started
 =====
 
 Connect via USB <a name="connect-usb"></a>
 ---
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_test_web.jpg)
+<!-- ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_test_web.jpg) -->
 
 Connect your Bhoreal Mini to a computer using a micro USB cable, which is used for the most of smartphones or cell phones. In any case, be assured that the micro USB cable you use allows the device load such as the data transfer. 
 
@@ -116,14 +94,16 @@ Open Bhoreal Test App <a name="testapp"></a>
 
 You can download the test application on the following link to check if your Bhoreal works correctly and understand the communication protocol in the best way:
 
-** ME FALTA LINK **
+[MAX patch for test Bhoreal](bhoreal/software/test_app/Bhoreal MINI - Test MIDI.maxpat)
 
 Select the MIDI port <a name="midiport"></a>
 ---
 
-The Bhoreal Test application uses MIDI protocol to communicate with the hardware. We need to open a corresponding midi port to send and receive MIDI from Bhoreal. Bhoreal is an Arduino based project and the MIDI port appears under the name of “Arduino Leonardo”. Once the MIDI port is selected the device is ready to send and receive data. 
+The Bhoreal Test application uses MIDI protocol to communicate with the hardware. We need to open a corresponding midi port to send and receive MIDI from Bhoreal. Bhoreal is an Arduino based project and the MIDI port appears under the name of “Arduino Leonardo” (placed where *"Bhoreal   "* appears in the picture). Once the MIDI port is selected the device is ready to send and receive data. 
 
-** ME FALTA FOTO **
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_1.jpg)
+
+
 
 Play with color <a name="playcolor"></a>
 ---
@@ -161,13 +141,31 @@ The Serial communication - also known as RS-232 - is based in the serial transmi
 
 Bhoreal uses the same serial protocol as Arduino to communicate with the programming tool, this protocol is always used whenever a firmware update is done. Bhoreal serial port levels are TTL, that is to say, the ‘0’ logic corresponds to 0 volts and the ‘1’ logic corresponds to 5 volts on the bus. 
 
-To activate the serial communication with Bhoreal it’s necessary to turn on the firmware flag, which comes disabled by defect. This is because the communication becomes a bit slower when the MIDI and the Serial are used simultaneously. Therefore, the users are free to select a communication port or any other port, simply turning on these flags. 
+To activate the serial communication with Bhoreal it’s necessary to turn on the firmware flag, which comes disabled by defect. This is because the communication becomes a bit slower when the MIDI and the Serial are used simultaneously. Therefore, the users are free to select a communication port or any other port, simply turning on these flags (`#define  SERIAL_ENABLE` and `#define  MIDI_DEBUG`at the beginning of *Bhoreal.h*). 
 
-** CODIGO DE LAS FLAGS **
+```
+#include <Arduino.h>
+#include <Wire.h>
+#include <avr/pgmspace.h>
+
+#define  MINI  			0  //Matrix size
+#define  SLIM  			1  //Matrix size
+#define  SLIMPRO  		2  //Matrix size
+
+#define  SERIAL_ENABLE  1
+#define  MIDI_DEBUG     1
+#define  SERIAL_DATA    0
+
+#define  TOOFULL 		100
+
+#define  MODEL  MINI 		//Model
+//#define  MODEL  SLIM 		//Model
+//#define  MODEL  SLIMPRO 	//Model
+```
 
 Next, we will show the available serial commands:
-Serial commands table ***
 
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_serialprotocol_table.jpg)
 
 
 
@@ -385,7 +383,83 @@ void loop () {
 
 ### Uploading
 ---
-coming soon!
+
+## Bhoreal MINI Programming Tutorial
+
+Each one of the following pictures responds to a point of the tutorial, in the same order. First picture shows what poin 1 tells, the second one for point 2, etc.
+
+- 1. **Connect the ISP programmer to the computer**
+Go to device administrator panel and check the device. See picture. In Windows7 the correct driver is not installed, so it’s necesary to do it before to connect.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_01.jpg)
+
+- 2. **Update controller**
+Go to properties and click the update controller button.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_02.jpg)
+
+- 3. **Install the drivers**
+Download to the desktop the drivers from this [link](https://github.com/bhoreal/bhoreal/blob/master/firmware/avrispmkii_libusb-win32_1.2.1.0.zip) and select the folder shown in the picture.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_03.jpg)
+
+- 4. **Check the device installed**
+Connect again the ISP programmer and check now the device configured correctly in the software.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_04.jpg)
+
+- 5. **Connect the micro USB**
+Connect a micro USB wire to the computer.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_05.jpg)
+
+- 6. **Check the Microcontroller**
+Go to device administrator and check if the microcontroller is detected by the system.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_06.jpg)
+
+- 7. **Download the Arduino development software**
+Go to this [link](http://downloads.arduino.cc/arduino-1.0.6-windows.exe) and download the windows installer version.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_07.jpg)
+
+- 8. **Setup the software**
+Install and open the software. After that, go to tools/boards and select *Arduino Leonardo*.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_08.jpg)
+
+- 9. **Setup the software**
+Go to tools/programmer and select *AVRISP mkII*
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_09.jpg)
+
+- 10. **Upload the firmware**
+Then, prepare the ISP connector as you see in the picture. You can use a 2x6 pin array male-male.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_10.jpg)
+
+- 11. **Upload the firmware**
+Connect the ISP connector the same way as the picture, and check if the green led of the ISP mkII is activated. Maybe you have to press laterally a little bit the  ISP to ensure that there's a good contact in all the pins. Only it’s necessary a small pressure or pull the wire, like the picture.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_11.jpg)
+
+- 12. **Upload the firmware**
+Then you have to find the firmware folder and open it into the programm. Go to file/open and find the file **bhoreal_slim_mini_test.ino**
+After this, click in file again and click into **upload using programmer** option. The programming will start. During the process yo have to see some leds blinking in the programmer.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_12.jpg)
+
+- 13. **Upload the firmware**
+If all is ok the firmware has to be uploaded correctly. Check the message of *Done Uploading!*.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_13.jpg)
+
+- 14. **Final test**
+Thats it!
+if all the process is ok you have to see the screen test with Red, Green, Blue and white transition. At this point is recommended to wait some minutes because some times the damages LEDs stop to working with high temperature.
+After check you can go to the next board and come back to the point 11 of this tutorial.
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_14.jpg)
 
 ### Code
 ---
