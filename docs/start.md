@@ -74,8 +74,8 @@ To learn more about this license and others visit: http://creativecommons.org/li
 
 Getting Started
 =====
-
-Connect via USB <a name="connect-usb"></a>
+<a name="connect-usb"></a>
+Connect via USB 
 ---
 
 Connect your Bhoreal Mini to a computer using a micro USB cable, which is used for the most of smartphones or cell phones. In any case, be assured that the micro USB cable you use allows the device load such as the data transfer. 
@@ -85,16 +85,18 @@ The device will be charged by USB connection, and as soon as connect it, the boo
 Once your controller is switched on, it’s ready for use through some application or software pack, which is compatible with MIDI and *Serie* protocol.
 
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_minis_usbconnection.jpg.jpg)
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_minis_usbconnection.jpg)
 
-Open Bhoreal Test App <a name="testapp"></a>
+<a name="testapp"></a>
+Open Bhoreal Test App 
 ---
 
 You can download the test application on the following link to check if your Bhoreal works correctly and understand the communication protocol in the best way:
 
 [MAX patch for test Bhoreal](https://github.com/bhoreal/bhoreal/blob/master/software/test_app/Bhoreal%20MINI%20-%20Test%20LED.maxpat)
 
-Select the MIDI port <a name="midiport"></a>
+<a name="midiport"></a>
+Select the MIDI port 
 ---
 
 The Bhoreal Test application uses MIDI protocol to communicate with the hardware. We need to open a corresponding midi port to send and receive MIDI from Bhoreal. Bhoreal is an Arduino based project and the MIDI port appears under the name of “Arduino Leonardo”. Once the MIDI port is selected the device is ready to send and receive data. 
@@ -105,15 +107,18 @@ In the test application, the MIDI input is configured to receive from any device
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_2.jpg)
 
-
-Play with color <a name="playcolor"></a>
+<a name="playcolor"></a>
+Play with color 
 ---
 
-The test application works as a MIDI monitor where you can see the messages that "you’re sending" when you press a button or move the slider (*notein* and *ctlin*). Also you can generate a sweep sequence that scans the LED screen using the same colors as the boot sequence, just toggle the "[X]" button above *metro 200*. Here we can see how the [MIDI](#com-midi) protocol works which is detailed in the [communication section](#com-protocol). 
-
-There is an other Bhoreal Test application you can download [here](https://github.com/bhoreal/bhoreal/blob/master/software/test_app/Bhoreal%20MINI%20-%20Test%20LED.maxpat)
+The test application works as a MIDI monitor where you can see the messages that "you’re sending" when you press a button or move the slider (*notein* and *ctlin*). Also you can generate a sweep sequence that scans the LED screen using the same colors as the boot sequence, just toggle the "[X]" button above *metro 200*. Here we can see how the [MIDI](#com-midi) protocol works, which is detailed in the [communication section](#com-protocol). 
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_3.jpg)
+
+There is an other Bhoreal Test application you can download [here](https://github.com/bhoreal/bhoreal/blob/master/software/test_app/Bhoreal%20MINI%20-%20Test%20LED.maxpat), where you can play with the different MIDI messages the Bhoreal can receive for LED color change. 
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_4.jpg)
+
 
 Go further!
 ---
@@ -121,8 +126,8 @@ Go further!
 If you want to learn more about your Bhoreal device, you can keep reading the following sections where we will explain you with details about the [hardware](#hardware) and its components, how to install the [programming environment](), the [communication protocols](#com-protocol), the [programming languages]() and the most important functions of the [firmware](#firmware), with dozens of examples that third-party software uses. 
 
 
-
-Communication Protocol <a name="com-protocol"></a>
+<a name="com-protocol"></a>
+Communication Protocol 
 =====
 
 Bhoreal can use two communication protocols: Serial and MIDI, 
@@ -136,8 +141,8 @@ If someone develops something interesting in this sense, we’d like to ask them
 
 
 
-
-Serial <a name="com-serial"></a>
+<a name="com-serial"></a>
+Serial 
 ---
 
 The Serial communication - also known as RS-232 - is based in the serial transmission of information through a bidirectional data cable. The communication is asynchronous with 8 bit packages and always needs an additional bit for the synchronization. This makes high velocities can not be reached, being 115200 Bd (bauds) the higher one recommended for Bhoreal.
@@ -171,8 +176,8 @@ Next, we will show the available serial commands:
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_serialprotocol_table.jpg)
 
 
-
-MIDI <a name="com-midi"></a>
+<a name="com-midi"></a>
+MIDI 
 ---
 
 The MIDI communication is a specific serial protocol which were started to use in the 80’s, to communicate among digital musical instruments. The MIDI protocol has many followers maintaining the compatibility with the most of audio/video softwares in real time. 
@@ -187,8 +192,8 @@ MIDI commands table ***
 
 
 
-
-Hardware <a name="hardware"></a>
+<a name="hardware"></a>
+Hardware 
 =====
 
 Mini
@@ -385,10 +390,8 @@ void loop () {
 }
 ```
 
-### Uploading
+### Uploading (Bhoreal MINI Programming Tutorial)
 ---
-
-### Bhoreal MINI Programming Tutorial
 
 Each one of the following pictures responds to a point of the tutorial, in the same order. First picture shows what poin 1 tells, the second one for point 2, etc.
 
