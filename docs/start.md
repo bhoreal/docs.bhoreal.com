@@ -78,8 +78,6 @@ Getting Started
 Connect via USB <a name="connect-usb"></a>
 ---
 
-<!-- ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_test_web.jpg) -->
-
 Connect your Bhoreal Mini to a computer using a micro USB cable, which is used for the most of smartphones or cell phones. In any case, be assured that the micro USB cable you use allows the device load such as the data transfer. 
 
 The device will be charged by USB connection, and as soon as connect it, the boot sequence will be run. This boot sequence is a gradient color wheel HUE.
@@ -87,30 +85,35 @@ The device will be charged by USB connection, and as soon as connect it, the boo
 Once your controller is switched on, it’s ready for use through some application or software pack, which is compatible with MIDI and *Serie* protocol.
 
 
-** ME FALTA FOTO **
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_minis_usbconnection.jpg.jpg)
 
 Open Bhoreal Test App <a name="testapp"></a>
 ---
 
 You can download the test application on the following link to check if your Bhoreal works correctly and understand the communication protocol in the best way:
 
-[MAX patch for test Bhoreal](bhoreal/software/test_app/Bhoreal MINI - Test MIDI.maxpat)
+[MAX patch for test Bhoreal](https://github.com/bhoreal/bhoreal/blob/master/software/test_app/Bhoreal%20MINI%20-%20Test%20LED.maxpat)
 
 Select the MIDI port <a name="midiport"></a>
 ---
 
-The Bhoreal Test application uses MIDI protocol to communicate with the hardware. We need to open a corresponding midi port to send and receive MIDI from Bhoreal. Bhoreal is an Arduino based project and the MIDI port appears under the name of “Arduino Leonardo” (placed where *"Bhoreal   "* appears in the picture). Once the MIDI port is selected the device is ready to send and receive data. 
+The Bhoreal Test application uses MIDI protocol to communicate with the hardware. We need to open a corresponding midi port to send and receive MIDI from Bhoreal. Bhoreal is an Arduino based project and the MIDI port appears under the name of “Arduino Leonardo”. Once the MIDI port is selected the device is ready to send and receive data. 
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_1.jpg)
 
+In the test application, the MIDI input is configured to receive from any device, but you should double-click on *noteout* and select “Arduino Leonardo” as mentioned.
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_2.jpg)
 
 
 Play with color <a name="playcolor"></a>
 ---
 
-The test application works as a MIDI monitor where you can see the messages of ‘you’re sending’ when you press a button or move the slider, also you can generate a sweep sequence that scans the LED screen using the same colors as the boot sequence. Here we can see how the [MIDI](#com-midi) protocol works which is detailed in the [communication section](#com-protocol). 
+The test application works as a MIDI monitor where you can see the messages that "you’re sending" when you press a button or move the slider (*notein* and *ctlin*). Also you can generate a sweep sequence that scans the LED screen using the same colors as the boot sequence, just toggle the "[X]" button above *metro 200*. Here we can see how the [MIDI](#com-midi) protocol works which is detailed in the [communication section](#com-protocol). 
 
+There is an other Bhoreal Test application you can download [here](https://github.com/bhoreal/bhoreal/blob/master/software/test_app/Bhoreal%20MINI%20-%20Test%20LED.maxpat)
 
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_3.jpg)
 
 Go further!
 ---
@@ -188,9 +191,10 @@ MIDI commands table ***
 Hardware <a name="hardware"></a>
 =====
 
-Mini Slim
+Mini
 ---
 
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_minis.jpg)
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front.jpg)
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back.jpg)
 
@@ -384,7 +388,7 @@ void loop () {
 ### Uploading
 ---
 
-## Bhoreal MINI Programming Tutorial
+### Bhoreal MINI Programming Tutorial
 
 Each one of the following pictures responds to a point of the tutorial, in the same order. First picture shows what poin 1 tells, the second one for point 2, etc.
 
