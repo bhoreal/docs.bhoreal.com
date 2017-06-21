@@ -188,8 +188,7 @@ The compatibility of Bhoreal with *MIDI USB Compliant*, unlike to Arduino, is be
 
 Next, we will show the available MIDI commands:
 
-MIDI commands table ***
-
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_MIDI-table.jpg)
 
 
 <a name="hardware"></a>
@@ -336,22 +335,20 @@ Features:
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics.jpg)
 
 
-"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
 <a name="eagle"></a>
 ### Eagle file
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_eagle.jpg)
 
-[Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
+(license)
 
-(#slim)
+<a name="slim"></a>
 Slim
 ---
 
 coming soon!
 
-(#slimpro)
+<a name="slimpro"></a>
 Slim Pro
 ---
 
@@ -485,13 +482,16 @@ Software
 =====
 
 ### Processing
+
+cooming soon!
+
 ### Pure Data
+
+cooming soon!
+
 ### Max
-### Ableton
-### Modul8
-### Quartz Composer
 
-
+cooming soon!
 
 Case
 =====
