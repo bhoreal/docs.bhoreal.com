@@ -202,7 +202,7 @@ Hardware
 Mini
 ---
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_minis.jpg)
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front.jpg)
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back.jpg)
 
@@ -479,7 +479,7 @@ As said in [firmware](#firmware) section, Bhoreal is based on "Arduino Leonardo"
 
 For correct compilation, see FLAGS settings at [Libraries](#libraries) (*bhoreal.h*).
  
-# Bhoreal.ino
+### Bhoreal.ino
 
 Here we have a simple set of functions that call the huge ones from the libraries.
 
@@ -514,13 +514,13 @@ void loop () {
 ## Libraries
 ---
 
-# Adafruit
+### Adafruit
 
 *Adafruit_Neopixel.cpp* and *Adafruit_Neopixel.h* form the library developed by [Adafruit Company](https://www.adafruit.com/) that is used to control the "neopixel" LED in Bhoral. 
 You can learn far more from their website and check the code at [their github](https://github.com/adafruit/Adafruit_NeoPixel), so we are not going to go deep further here.
 
 
-# Bhoreal.h
+### Bhoreal.h
 
 The flags for correct Bhoreal working and core function definitions live here. 
 In [firmware](#firmware) section we already talked about the MIDI and Serial configuration, but now is time to explain how to choose your Bhoreal model.
@@ -528,9 +528,9 @@ In [firmware](#firmware) section we already talked about the MIDI and Serial con
 
 Below the MIDI and Serial flags, there are another three that distinguish between Bhoreal models.
 ```
-#define MINI  	  0  //Tamaño de la matriz
-#define MINISLIM  1  //Tamaño de la matriz
-#define SLIM  	  2  //Tamaño de la matriz
+#define MINI  	  0  // Matrix size
+#define MINISLIM  1  // Matrix size
+#define SLIM  	  2  // Matrix size
 ```
 In order to let the board know which part of the code it should use (the one for the Mini model, or the one for the Slim model), under the previous definitions, comment and de-comment the flags that match your model.
 ```
@@ -540,7 +540,7 @@ In order to let the board know which part of the code it should use (the one for
 
 The remaining code corresponds to the definition of functions that make Bhoreal work.
 
-# Bhoreal.cpp
+### Bhoreal.cpp
 
 coming soon!
 
@@ -554,7 +554,7 @@ Software
 
 ## Processing
 
-# Bhoreal Emulator
+### Bhoreal Emulator
 
 A Processing sketch that emulates the Bhoreal SLIM, where you can press the pads and see the sended OSC messages.
 
@@ -568,7 +568,7 @@ cooming soon!
 
 ## Max
 
-# Bhoreal Router
+### Bhoreal Router
 
 A patch in MAX that routes the ***
 
