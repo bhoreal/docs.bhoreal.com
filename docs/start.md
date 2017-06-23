@@ -1,4 +1,4 @@
-Welcome
+reWelcome
 =====
 	
 Thank you! :)
@@ -111,9 +111,13 @@ In the test application, the MIDI input is configured to receive from any device
 Play with color 
 ---
 
-The test application works as a MIDI monitor where you can see the messages that "you’re sending" when you press a button or move the slider (*notein* and *ctlin*). Also you can generate a sweep sequence that scans the LED screen using the same colors as the boot sequence, just toggle the "[X]" button above *metro 200*. Here we can see how the [MIDI](#com-midi) protocol works, which is detailed in the [communication section](#com-protocol). 
+The test application works as a MIDI monitor where you can see the messages that "you’re sending" when you press a button or move the slider (*notein* and *ctlin*). 
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_3.jpg)
+
+Also you can generate a sweep sequence that scans the LED screen using the same colors as the boot sequence, just toggle the "[X]" button above *metro 200*. Here we can see how the [MIDI](#com-midi) protocol works, which is detailed in the [communication section](#com-protocol). 
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal-midi_test_1.gif)
 
 There is an other Bhoreal Test application you can download [here](https://github.com/bhoreal/bhoreal/blob/master/software/test_app/Bhoreal%20MINI%20-%20Test%20LED.maxpat), where you can play with the different MIDI messages the Bhoreal can receive for LED color change. 
 
@@ -203,7 +207,7 @@ Mini
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back.jpg)
 
 <a name="microcontroller"></a>
-### Microcontroller
+## Microcontroller
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back_microcontroller.jpg)
 
@@ -221,7 +225,7 @@ Some of its key features are as follows:
 - JTAG Debug mode
 
 <a name="transistors"></a>
-### Transistors
+## Transistors
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back_transistor.jpg)
 
@@ -229,21 +233,21 @@ There are two transistors on the PCB that have a very important role for the ele
 For that, we’ve made two groups of independent LEDs, which are controlled by Q2a and Q2b, they alternate to divide into two the consumption and the light intensity. Q1 is a control signal investor that acts on Q2b, while Q2a is connected directly to this signal. This frequency is controlled by firmware and is very high, so we couldn't notice the blinking of the screen. This is possible because the WS2812 has two independent VCC lines, one for the LED and the other for the digital driver WS2811, embed in the LED capsule.
 
 <a name="fuse"></a>
-### Fuse
+## Fuse
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back_fuse.jpg)
 
 The Bhoreal Mini Slim board has a resettable polyfuse that protects your computer's USB ports from shorts and overcurrent. Although most computers provide their own internal protection, the fuse provides an extra layer of protection. If more than 500 mA is applied to the USB port, the fuse will automatically break the connection until the short or overload is removed.
 
 <a name="icsp"></a>
-### ICSP
+## ICSP
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back_icsp.jpg)
 
 The connector *In Circuit Serial Programming* or commonly called ICSP allows to reprogram the microcontroller ATmega32U4 from a compatible external programmer. This method allows to restore the device bootloader completely or update it, if it’s necessary.  
 
 <a name="leds"></a>
-### LEDs 
+## LEDs 
 
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front_led.jpg)
@@ -270,14 +274,14 @@ Forward Voltage:
 - Blue: 3.2-3.4V
 
 <a name="usbport"></a>
-### USB port
+## USB port
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front_usb.jpg)
 
 Bhoreal Mini has a Micro USB connector that enables the connectivity between the device and the USB communication port. Simply connect it to a computer with a micro USB cable to get started.
 
 <a name="pads"></a>
-### Pads
+## Pads
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front_pad.jpg)
 
@@ -287,7 +291,7 @@ Each one of the buttons has a conductive ring at the bottom that works as a swit
 There are two keypad models adapted the different type of LEDs. 
 
 <a name="slider"></a>
-### Slider
+## Slider
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front_slider.jpg)
 
@@ -303,14 +307,14 @@ Features:
 
 
 <a name="reset"></a>
-### Reset
+## Reset
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front_reset.jpg)
 
 The Reset push button allows to reset the microcontroller and to reboot the firmware. This button activates the Reset circuit which is 100% compatible with Arduino Leonardo. 
 
 <a name="iopins"></a>
-### I/O Pins
+## I/O Pins
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front_iopins.jpg)
 
@@ -323,20 +327,20 @@ Features:
 [ VCC  A0  A1  A2  A3  A4  GND ]  
 
 <a name="layout"></a>
-### Layout
+## Layout
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_layout.jpg)
 
 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 <a name="scheme"></a>
-### Schematics
+## Schematics
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics.jpg)
 
 
 <a name="eagle"></a>
-### Eagle file
+## Eagle file
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_eagle.jpg)
 
@@ -387,7 +391,7 @@ void loop () {
 }
 ```
 
-### Uploading (Bhoreal MINI Programming Tutorial)
+## Uploading (Bhoreal MINI Programming Tutorial)
 ---
 
 Each one of the following pictures responds to a point of the tutorial, in the same order. First picture shows what poin 1 tells, the second one for point 2, etc.
@@ -465,15 +469,82 @@ After check you can go to the next board and come back to the point 11 of this t
 
 ![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_14.jpg)
 
-### Code
+<a name="code"></a>
+## Code
 ---
+
+Here we are going to explain a little bit about the diferent parts of the code that make Bhoreal work as it does.
+
+As said in [firmware](#firmware) section, Bhoreal is based on "Arduino Leonardo". The project includes the Arduino code that runs all the action, the necessary libraries for LED management, and the C++ developed libraries that build the heart of Bhoreal. Most of the code is explained in comments, so we are going just to talk about the main structure.
+
+For correct compilation, see FLAGS settings at [Libraries](#libraries) (*bhoreal.h*).
+ 
+# Bhoreal.ino
+
+Here we have a simple set of functions that call the huge ones from the libraries.
+
+```
+#include <Arduino.h>
+#include "Bhoreal.h"
+
+// Serial data transfer rate
+#define BAUD 57600
+
+Bhoreal Bhoreal;
+
+void setup() {
+
+  //Bhoreal.begin(SLIM, BAUD);
+  Bhoreal.begin(BAUD);
+  // Run the startup animation
+  Bhoreal.startup();
+}
+  
+void loop () {
+  // Turn on the lights
+  Bhoreal.midiRefresh();
+  // Check the button states
+  Bhoreal.checkButtons();
+  // Check and report the ADC states, if necessary
+  Bhoreal.checkADC();
+}
+```
+
+<a name="libraries"></a>
+## Libraries
+---
+
+# Adafruit
+
+*Adafruit_Neopixel.cpp* and *Adafruit_Neopixel.h* form the library developed by [Adafruit Company](https://www.adafruit.com/) that is used to control the "neopixel" LED in Bhoral. 
+You can learn far more from their website and check the code at [their github](https://github.com/adafruit/Adafruit_NeoPixel), so we are not going to go deep further here.
+
+
+# Bhoreal.h
+
+The flags for correct Bhoreal working and core function definitions live here. 
+In [firmware](#firmware) section we already talked about the MIDI and Serial configuration, but now is time to explain how to choose your Bhoreal model.
+
+
+Below the MIDI and Serial flags, there are another three that distinguish between Bhoreal models.
+```
+#define MINI  	  0  //Tamaño de la matriz
+#define MINISLIM  1  //Tamaño de la matriz
+#define SLIM  	  2  //Tamaño de la matriz
+```
+In order to let the board know which part of the code it should use (the one for the Mini model, or the one for the Slim model), under the previous definitions, comment and de-comment the flags that match your model.
+```
+#define  MODEL  MINISLIM //Model
+//#define  MODEL  SLIM 	 //Model
+```
+
+The remaining code corresponds to the definition of functions that make Bhoreal work.
+
+# Bhoreal.cpp
+
 coming soon!
 
-### Libraries
----
-coming soon!
-
-### Atributions
+## Atributions
 ---
 coming soon!
 
@@ -481,17 +552,27 @@ coming soon!
 Software
 =====
 
-### Processing
+## Processing
+
+# Bhoreal Emulator
+
+A Processing sketch that emulates the Bhoreal SLIM, where you can press the pads and see the sended OSC messages.
+
+[Bhoreal Emulator at github](https://github.com/bhoreal/bhoreal/tree/master/software/Processing/bhorealEmulator)
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_emulatorPDE.png)
+
+## Pure Data
 
 cooming soon!
 
-### Pure Data
+## Max
 
-cooming soon!
+# Bhoreal Router
 
-### Max
+A patch in MAX that routes the ***
 
-cooming soon!
+[Bhoreal MAX Router at github](https://github.com/bhoreal/bhoreal/tree/master/software/MAX/Bhoreal_MAX_router)
 
 Case
 =====
