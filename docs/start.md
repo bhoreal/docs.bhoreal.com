@@ -16,14 +16,16 @@ You can also check this project in [GitHub](https://github.com/bhoreal/bhoreal) 
 
 In any case, thank you for being here.
 
-About <a name="about"></a>
+<a name="about"></a>
+About 
 ---
 
 All Bhoreal control interfaces have a minimalist design. Its external appearance is extremely simple, with a square shape and backlit buttons, without icons or marks. They don’t generate sounds by itself. They’re a blank slate, without any autonomous function. You have to connect them to a computer and associate them to a software in order to work. When you connect Bhoreal controller to a computer, begins a startup test program and the buttons blink. Each button has its own LED and surprise! They’re RGB!
 
 Open Source philosophy is present in both hardware and software design. The firmware is Open Source and all the documentation is released under Creative Common licenses. We love Open Source and we hope you love it too!
 
-About this documentation <a name="about-docu"></a>
+<a name="about-docu"></a>
+About this documentation 
 ---
 
 This is the support page for Bhoreal documents. You can find here all the information you need to get to know all about your controller. You can test if it works correctly as soon as you take it out from the box, also reprogram the firmware in order to use Bhoreal with your favorite software applications. 
@@ -35,8 +37,8 @@ These big big groups are divided into more specific subgroups. For example, if y
 There is also a general section of **TROUBLESHOOTING** where you can find the solutions for the most common problems that you may be faced with, when you start to use a Bhoreal controller. 
 This is not a finished document and will be modified in parallel with the project evolution. It will be very welcome any kind of comment related to improve the contents or the structure itself.  
 
-
-Contributions <a name="contrib"></a>
+<a name="contrib"></a>
+Contributions 
 ---
 
 This documentation is managed by Bhoreal, but supported by the community. We welcome contributions such as:
@@ -54,8 +56,8 @@ Some of this documentation is derived from the Arduino documentation, as the Ard
 
 This documentation is built using Flatdoc, an awesome tool for building beautiful documentation from simple Markdown files. Some template features are based on the Spark project documentation by Spark Labs, Inc.
 
-
-License <a name="licens"></a>
+<a name="licens"></a>
+License 
 ---
 
 All the contents on this page are published under a Creative Commons license: 
@@ -71,6 +73,7 @@ If you remix, transform of develop from this material, you may distribute your c
 To learn more about this license and others visit: http://creativecommons.org/licenses/
 
 <div id="licenseImage1"></div>
+<div class="licenseImage1"></div>
 
 Getting Started
 =====
