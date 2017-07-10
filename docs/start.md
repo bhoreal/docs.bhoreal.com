@@ -72,8 +72,7 @@ If you remix, transform of develop from this material, you may distribute your c
 
 To learn more about this license and others visit: http://creativecommons.org/licenses/
 
-<div id="licenseImage1"></div>
-<div class="licenseImage1"></div>
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
 Getting Started
 =====
@@ -334,20 +333,23 @@ Features:
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_layout.jpg)
 
-"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
 <a name="scheme"></a>
 ## Schematics
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics.jpg)
+You can produce your own Bhoreal board if you want, and build a DIY one completely by your hand. The required files to do it can be found [here](https://github.com/bhoreal/bhoreal/tree/master/hardware/Bhoreal%20Mini%20Slim%20Schematics).
 
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics_1.png)
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics_2.png)
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
 <a name="eagle"></a>
 ## Eagle file
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_eagle.jpg)
 
-(license)
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
 <a name="slim"></a>
 Slim
@@ -555,11 +557,73 @@ coming soon!
 Software
 =====
 
+## Max
+
+### Bhoreal Router
+
+A patch in MAX that takes the incoming MIDI messages from Bhoreal, turn them into OSC and send them from the selected port; the same way it takes the OSC messages received in a chosen port, and send the corresponding MIDI to Bhoreal.
+
+[Bhoreal MAX MIDI-OSC Router at github](https://github.com/bhoreal/bhoreal/blob/master/software/MAX/MIDI-OSC_Router/Bhoreal_MIDI-OSC_com.maxpat)
+
+![Bhoreal MAX Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_maxmidiosc_router.png)
+
+There is also a router patch that works with the [serial](#com-serial) communication. This needs the serial flags to be true.
+
+[Bhoreal MAX Serial Router at github](https://github.com/bhoreal/bhoreal/tree/master/software/MAX/Bhoreal_MAX_router)
+
+![Bhoreal MAX Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_maxrouter.png)
+
 ## Processing
+
+### Bhoreal Router
+
+A Processing sketch that takes MIDI from Bhoreal and sends OSC wherever you want by a selected port, and also does the inverse way.
+
+It comes with a small graphic interface that shows the incoming MIDI data on the left matrix + slider and offers the posibility of sending MIDI on the right matrix + slider.
+
+[Bhoreal Processing Router at github](https://github.com/bhoreal/bhoreal/tree/master/software/Processing/Bhoreal_MIDI_OSC_com)
+
+Between all the code for setup, communication and graphic help, this are the important functions:
+
+```
+// if OSC is received
+void oscEvent(OscMessage theOscMessage) {
+
+  if( theOscMessage.addrPattern().equals("/led")) {
+    channel = 1;                                  // the channel
+    pitch = theOscMessage.get(0).intValue();      // the pad
+    velocity = theOscMessage.get(1).intValue();   // the color
+    note.setChannel(channel);
+    note.setPitch(pitch);
+    note.setVelocity(velocity);
+    // send the MIDI
+    myBus.sendNoteOn(note);
+  }
+}
+
+// if MIDI noteOn is received (very similar for noteOff)
+
+void noteOn(Note note) {
+  // turn into OSC
+  OscMessage myMessage = new OscMessage("/pad"+ str(note.pitch()));  // /padX, where X is the number of pad (0-15)
+  if(note.velocity() == 64) {myMessage.add(1);}                      // value of the pad pressed/unpressed (1/0)
+  else {myMessage.add(0);} 
+  oscP5.send(myMessage, tosendAdress);
+}
+
+// if MIDI CC is received
+
+void controllerChange(ControlChange change) {
+  // turn into OSC
+  OscMessage myMessage = new OscMessage("/slider"+ str(note.pitch()));  // /slider, a Control Change value
+  myMessage.add(map(change.value(), 0, 127, 0, 255));                   // the CC value of the slider (0-255)
+  oscP5.send(myMessage, tosendAdress);
+}
+```
 
 ### Bhoreal Emulator
 
-A Processing sketch that emulates the Bhoreal SLIM, where you can press the pads and see the sended OSC messages.
+A Processing sketch that emulates the Bhoreal SLIM, where you can press the pads and see the sended OSC messages. Needs [serial](#com-serial) communication to be activated.
 
 [Bhoreal Emulator at github](https://github.com/bhoreal/bhoreal/tree/master/software/Processing/bhorealEmulator)
 
@@ -568,14 +632,6 @@ A Processing sketch that emulates the Bhoreal SLIM, where you can press the pads
 ## Pure Data
 
 cooming soon!
-
-## Max
-
-### Bhoreal Router
-
-A patch in MAX that routes the ***
-
-[Bhoreal MAX Router at github](https://github.com/bhoreal/bhoreal/tree/master/software/MAX/Bhoreal_MAX_router)
 
 Case
 =====
@@ -588,5 +644,3 @@ Slim/Slim Pro
 
 Troubleshooting
 =====
-
-Test de subida y sincronizacion! Alex Github!!!
