@@ -129,7 +129,7 @@ There is an other Bhoreal Test application you can download [here](https://githu
 Go further!
 ---
 
-If you want to learn more about your Bhoreal device, you can keep reading the following sections where we will explain you with details about the [hardware](#hardware) and its components, how to install the [programming environment](), the [communication protocols](#com-protocol), the [programming languages]() and the most important functions of the [firmware](#firmware), with dozens of examples that third-party software uses. 
+If you want to learn more about your Bhoreal device, you can keep reading the following sections where we will explain you with details about the [hardware](#hardware) and its components, how to install the [programming environment](#code), the [communication protocols](#com-protocol), the [programming languages](#code) and the most important functions of the [firmware](#firmware), with dozens of examples that third-party software uses. 
 
 
 <a name="com-protocol"></a>
@@ -190,7 +190,7 @@ The MIDI communication is a specific serial protocol which were started to use i
 
 The MIDI in Bhoreal is *Compliant USB MIDI*. This means it works with a standard library that doesn’t require external drivers, which makes very easy the installation. Plug and play!
 
-The compatibility of Bhoreal with *MIDI USB Compliant*, unlike to Arduino, is because of the use of a specific *Hardware Core* that enables the MIDI functions on the firmware. For that, we’ve relied on the open source project ARCORE. Check out the installation section of [programming environment]() for more information.  
+The compatibility of Bhoreal with *MIDI USB Compliant*, unlike to Arduino, is because of the use of a specific *Hardware Core* that enables the MIDI functions on the firmware. For that, we’ve relied on the open source project ARCORE. Check out the installation section of [programming environment](#code) for more information.  
 
 Next, we will show the available MIDI commands:
 
@@ -571,7 +571,7 @@ There is also a router patch that works with the [serial](#com-serial) communica
 
 [Bhoreal MAX Serial Router at github](https://github.com/bhoreal/bhoreal/tree/master/software/MAX/Bhoreal_MAX_router)
 
-![Bhoreal MAX Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_maxrouter.png)
+![Bhoreal MAX Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_maxrouter1.png)
 
 ## Processing
 
