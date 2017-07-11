@@ -1,4 +1,4 @@
-reWelcome
+Welcome
 =====
 	
 Thank you! :)
@@ -74,8 +74,11 @@ To learn more about this license and others visit: http://creativecommons.org/li
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
-Getting Started
+MINI
 =====
+
+#Getting Started
+
 <a name="connect-usb"></a>
 Connect via USB 
 ---
@@ -110,6 +113,7 @@ In the test application, the MIDI input is configured to receive from any device
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_2.jpg)
 
 <a name="playcolor"></a>
+
 Play with color 
 ---
 
@@ -635,7 +639,7 @@ A patch in PD that takes the incoming MIDI messages from Bhoreal, turn them into
 
 [Bhoreal PureData MIDI-OSC Router at github](https://github.com/bhoreal/bhoreal/blob/master/software/MAX/MIDI-OSC_Router/Bhoreal_MIDI-OSC_com.maxpat)
 
-![Bhoreal PD Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_pdmidiosc_router.jpg)
+![Bhoreal PD Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_pdmidiosc_router.png)
 
 Case
 =====
