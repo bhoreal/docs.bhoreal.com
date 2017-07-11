@@ -631,16 +631,11 @@ A Processing sketch that emulates the Bhoreal SLIM, where you can press the pads
 
 ## Pure Data
 
-cooming soon!
+A patch in PD that takes the incoming MIDI messages from Bhoreal, turn them into OSC and send them from the selected port; the same way it takes the OSC messages received in a chosen port, and send the corresponding MIDI to Bhoreal.
+
+[Bhoreal PureData MIDI-OSC Router at github](https://github.com/bhoreal/bhoreal/blob/master/software/MAX/MIDI-OSC_Router/Bhoreal_MIDI-OSC_com.maxpat)
+
+![Bhoreal PD Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_pdmidiosc_router.jpg)
 
 Case
-=====
-
-Mini
----
-Slim/Slim Pro
----
-
-
-Troubleshooting
 =====
