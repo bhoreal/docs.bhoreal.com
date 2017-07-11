@@ -74,11 +74,8 @@ To learn more about this license and others visit: http://creativecommons.org/li
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
-MINI
+Getting Started
 =====
-
-#Getting Started
-
 <a name="connect-usb"></a>
 Connect via USB 
 ---
@@ -113,7 +110,6 @@ In the test application, the MIDI input is configured to receive from any device
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_2.jpg)
 
 <a name="playcolor"></a>
-
 Play with color 
 ---
 
@@ -359,13 +355,36 @@ You can produce your own Bhoreal board if you want, and build a DIY one complete
 Slim
 ---
 
-coming soon!
+<a name="scheme"></a>
+## Schematics
 
-<a name="slimpro"></a>
-Slim Pro
----
+The files needed for build a Bhoreal Slim board can be found [here](https://github.com/bhoreal/bhoreal/tree/master/hardware/Bhoreal%20Slim%20Pro%20Schematics).
 
-coming soon!
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_1.jpg)
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_2.jpg)
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_3.jpg)
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_4.jpg)
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_5.jpg)
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_6.jpg)
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_7.jpg)
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_8.jpg)
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
+
+<a name="eagle"></a>
+## Eagle file
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_eagle.jpg)
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
+
 
 
 <a name="firmware"></a>
