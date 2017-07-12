@@ -153,8 +153,6 @@ If someone develops something interesting in this sense, we’d like to ask them
 Serial 
 ---
 
-![Bhoreal available serial commands](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_serialprotocol_table.jpg)
-
 ```
 #include <Arduino.h>
 #include <Wire.h>
@@ -176,6 +174,8 @@ Serial
 ```
 
 The Serial communication - also known as RS-232 - is based in the serial transmission of information through a bidirectional data cable. The communication is asynchronous with 8 bit packages and always needs an additional bit for the synchronization. This makes high velocities can not be reached, being 115200 Bd (bauds) the higher one recommended for Bhoreal.
+
+![Bhoreal available serial commands](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_serialprotocol_table.jpg)
 
 Bhoreal uses the same serial protocol as Arduino to communicate with the programming tool, this protocol is always used whenever a firmware update is done. Bhoreal serial port levels are TTL, that is to say, the ‘0’ logic corresponds to 0 volts and the ‘1’ logic corresponds to 5 volts on the bus. 
 
@@ -209,6 +209,7 @@ Mini
 ---
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front.jpg)
+
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back.jpg)
 
@@ -364,27 +365,35 @@ The files needed for build a Bhoreal Slim board can be found [here](https://gith
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_1.jpg)
 
+text
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_2.jpg)
 
+text
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_3.jpg)
 
+text
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_4.jpg)
 
+text
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_5.jpg)
 
+text
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_6.jpg)
 
+text
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_7.jpg)
 
+text
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_8.jpg)
 
+text
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
@@ -422,7 +431,7 @@ void loop () {
 }
 ```
 
-## Uploading (Bhoreal MINI Programming Tutorial)
+## Uploading (Programming Tutorial)
 ---
 
 Each one of the following pictures responds to a point of the tutorial, in the same order. First picture shows what poin 1 tells, the second one for point 2, etc.
@@ -584,11 +593,12 @@ Software
 
 ![Bhoreal MAX Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_maxmidiosc_router.png)
 
-![Bhoreal MAX Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_maxrouter1.png)
 
 A patch in MAX that takes the incoming MIDI messages from Bhoreal, turn them into OSC and send them from the selected port; the same way it takes the OSC messages received in a chosen port, and send the corresponding MIDI to Bhoreal.
 
 [Bhoreal MAX MIDI-OSC Router at github](https://github.com/bhoreal/bhoreal/blob/master/software/MAX/MIDI-OSC_Router/Bhoreal_MIDI-OSC_com.maxpat)
+
+![Bhoreal MAX Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_maxrouter1.png)
 
 There is also a router patch that works with the [serial](#com-serial) communication (second image). This needs the serial flags to be true.
 
