@@ -363,28 +363,28 @@ Slim
 The files needed for build a Bhoreal Slim board can be found [here](https://github.com/bhoreal/bhoreal/tree/master/hardware/Bhoreal%20Slim%20Pro%20Schematics).
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_1.jpg)
-tiri
+
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_2.jpg)
-tiri
+
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_3.jpg)
-tiri
+
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_4.jpg)
-tiri
+
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_5.jpg)
-tiri
+
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_6.jpg)
-tiri
+
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_7.jpg)
-tiri
+
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_8.jpg)
 
-
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
-
-<a name="eagle"></a>
-## Eagle file
-
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_eagle.jpg)
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
