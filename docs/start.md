@@ -348,6 +348,8 @@ You can produce your own Bhoreal board if you want, and build a DIY one complete
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics_2.jpg)
 
+Under CC License.
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
 
