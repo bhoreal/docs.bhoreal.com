@@ -102,6 +102,7 @@ Select the MIDI port
 ---
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_1.jpg)
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_2.jpg)
 
 The Bhoreal Test application uses MIDI protocol to communicate with the hardware. We need to open a corresponding midi port to send and receive MIDI from Bhoreal. Bhoreal is an Arduino based project and the MIDI port appears under the name of “Arduino Leonardo”. Once the MIDI port is selected the device is ready to send and receive data. 
@@ -116,10 +117,9 @@ Play with color
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_3.jpg)
 
+The test application works as a MIDI monitor where you can see the messages that "you’re sending" when you press a button or move the slider (*notein* and *ctlin*). 
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal-midi_test_1.gif)
-
-The test application works as a MIDI monitor where you can see the messages that "you’re sending" when you press a button or move the slider (*notein* and *ctlin*). 
 
 Also you can generate a sweep sequence that scans the LED screen using the same colors as the boot sequence, just toggle the "[X]" button above *metro 200*. Here we can see how the [MIDI](#com-midi) protocol works, which is detailed in the [communication section](#com-protocol). 
 
@@ -153,6 +153,8 @@ If someone develops something interesting in this sense, we’d like to ask them
 Serial 
 ---
 
+![Bhoreal available serial commands](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_serialprotocol_table.jpg)
+
 ```
 #include <Arduino.h>
 #include <Wire.h>
@@ -172,7 +174,6 @@ Serial
 //#define  MODEL  SLIM 		//Model
 //#define  MODEL  SLIMPRO 	//Model
 ```
-![Bhoreal available serial commands](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_serialprotocol_table.jpg)
 
 The Serial communication - also known as RS-232 - is based in the serial transmission of information through a bidirectional data cable. The communication is asynchronous with 8 bit packages and always needs an additional bit for the synchronization. This makes high velocities can not be reached, being 115200 Bd (bauds) the higher one recommended for Bhoreal.
 
@@ -207,8 +208,8 @@ Hardware
 Mini
 ---
 
-
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front.jpg)
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back.jpg)
 
 <a name="microcontroller"></a>
@@ -337,11 +338,11 @@ Features:
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_layout.jpg)
 
 <a name="scheme"></a>
-## Schematics (Eagle foñe)
+## Schematics (Eagle file)
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics_1.png)
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics_1.jpg)
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics_2.png)
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics_2.jpg)
 
 You can produce your own Bhoreal board if you want, and build a DIY one completely by your hand. The required files to do it can be found [here](https://github.com/bhoreal/bhoreal/tree/master/hardware/Bhoreal%20Mini%20Slim%20Schematics).
 
@@ -359,23 +360,23 @@ Slim
 <a name="scheme"></a>
 ## Schematics (Eagle File)
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_1.jpg)
-
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_2.jpg)
-
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_3.jpg)
-
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_4.jpg)
-
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_5.jpg)
-
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_6.jpg)
-
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_7.jpg)
-
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_8.jpg)
-
 The files needed for build a Bhoreal Slim board can be found [here](https://github.com/bhoreal/bhoreal/tree/master/hardware/Bhoreal%20Slim%20Pro%20Schematics).
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_1.jpg)
+tiri
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_2.jpg)
+tiri
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_3.jpg)
+tiri
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_4.jpg)
+tiri
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_5.jpg)
+tiri
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_6.jpg)
+tiri
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_7.jpg)
+tiri
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_8.jpg)
 
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
