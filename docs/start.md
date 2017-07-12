@@ -60,6 +60,9 @@ This documentation is built using Flatdoc, an awesome tool for building beautifu
 License 
 ---
 
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
+
+
 All the contents on this page are published under a Creative Commons license: 
 
 Creative Commons Attribution - Non Comercial - Share Alike 3.0 License (CC BY-NC-SA 3.0).
@@ -72,22 +75,19 @@ If you remix, transform of develop from this material, you may distribute your c
 
 To learn more about this license and others visit: http://creativecommons.org/licenses/
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
-
 Getting Started
 =====
 <a name="connect-usb"></a>
 Connect via USB 
 ---
 
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_minis_usbconnection.jpg)
+
 Connect your Bhoreal Mini to a computer using a micro USB cable, which is used for the most of smartphones or cell phones. In any case, be assured that the micro USB cable you use allows the device load such as the data transfer. 
 
 The device will be charged by USB connection, and as soon as connect it, the boot sequence will be run. This boot sequence is a gradient color wheel HUE.
 
 Once your controller is switched on, it’s ready for use through some application or software pack, which is compatible with MIDI and *Serie* protocol.
-
-
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_minis_usbconnection.jpg)
 
 <a name="testapp"></a>
 Open Bhoreal Test App 
@@ -101,9 +101,10 @@ You can download the test application on the following link to check if your Bho
 Select the MIDI port 
 ---
 
-The Bhoreal Test application uses MIDI protocol to communicate with the hardware. We need to open a corresponding midi port to send and receive MIDI from Bhoreal. Bhoreal is an Arduino based project and the MIDI port appears under the name of “Arduino Leonardo”. Once the MIDI port is selected the device is ready to send and receive data. 
-
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_1.jpg)
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_2.jpg)
+
+The Bhoreal Test application uses MIDI protocol to communicate with the hardware. We need to open a corresponding midi port to send and receive MIDI from Bhoreal. Bhoreal is an Arduino based project and the MIDI port appears under the name of “Arduino Leonardo”. Once the MIDI port is selected the device is ready to send and receive data. 
 
 In the test application, the MIDI input is configured to receive from any device, but you should double-click on *noteout* and select “Arduino Leonardo” as mentioned.
 
@@ -113,17 +114,18 @@ In the test application, the MIDI input is configured to receive from any device
 Play with color 
 ---
 
-The test application works as a MIDI monitor where you can see the messages that "you’re sending" when you press a button or move the slider (*notein* and *ctlin*). 
-
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_3.jpg)
 
-Also you can generate a sweep sequence that scans the LED screen using the same colors as the boot sequence, just toggle the "[X]" button above *metro 200*. Here we can see how the [MIDI](#com-midi) protocol works, which is detailed in the [communication section](#com-protocol). 
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal-midi_test_1.gif)
 
-There is an other Bhoreal Test application you can download [here](https://github.com/bhoreal/bhoreal/blob/master/software/test_app/Bhoreal%20MINI%20-%20Test%20LED.maxpat), where you can play with the different MIDI messages the Bhoreal can receive for LED color change. 
+The test application works as a MIDI monitor where you can see the messages that "you’re sending" when you press a button or move the slider (*notein* and *ctlin*). 
+
+Also you can generate a sweep sequence that scans the LED screen using the same colors as the boot sequence, just toggle the "[X]" button above *metro 200*. Here we can see how the [MIDI](#com-midi) protocol works, which is detailed in the [communication section](#com-protocol). 
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_testapp_4.jpg)
+
+There is an other Bhoreal Test application you can download [here](https://github.com/bhoreal/bhoreal/blob/master/software/test_app/Bhoreal%20MINI%20-%20Test%20LED.maxpat), where you can play with the different MIDI messages the Bhoreal can receive for LED color change. 
 
 
 Go further!
@@ -151,12 +153,6 @@ If someone develops something interesting in this sense, we’d like to ask them
 Serial 
 ---
 
-The Serial communication - also known as RS-232 - is based in the serial transmission of information through a bidirectional data cable. The communication is asynchronous with 8 bit packages and always needs an additional bit for the synchronization. This makes high velocities can not be reached, being 115200 Bd (bauds) the higher one recommended for Bhoreal.
-
-Bhoreal uses the same serial protocol as Arduino to communicate with the programming tool, this protocol is always used whenever a firmware update is done. Bhoreal serial port levels are TTL, that is to say, the ‘0’ logic corresponds to 0 volts and the ‘1’ logic corresponds to 5 volts on the bus. 
-
-To activate the serial communication with Bhoreal it’s necessary to turn on the firmware flag, which comes disabled by defect. This is because the communication becomes a bit slower when the MIDI and the Serial are used simultaneously. Therefore, the users are free to select a communication port or any other port, simply turning on these flags (`#define  SERIAL_ENABLE` and `#define  MIDI_DEBUG`at the beginning of *Bhoreal.h*). 
-
 ```
 #include <Arduino.h>
 #include <Wire.h>
@@ -176,15 +172,22 @@ To activate the serial communication with Bhoreal it’s necessary to turn on th
 //#define  MODEL  SLIM 		//Model
 //#define  MODEL  SLIMPRO 	//Model
 ```
+![Bhoreal available serial commands](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_serialprotocol_table.jpg)
 
-Next, we will show the available serial commands:
+The Serial communication - also known as RS-232 - is based in the serial transmission of information through a bidirectional data cable. The communication is asynchronous with 8 bit packages and always needs an additional bit for the synchronization. This makes high velocities can not be reached, being 115200 Bd (bauds) the higher one recommended for Bhoreal.
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_serialprotocol_table.jpg)
+Bhoreal uses the same serial protocol as Arduino to communicate with the programming tool, this protocol is always used whenever a firmware update is done. Bhoreal serial port levels are TTL, that is to say, the ‘0’ logic corresponds to 0 volts and the ‘1’ logic corresponds to 5 volts on the bus. 
+
+To activate the serial communication with Bhoreal it’s necessary to turn on the firmware flag, which comes disabled by defect. This is because the communication becomes a bit slower when the MIDI and the Serial are used simultaneously. Therefore, the users are free to select a communication port or any other port, simply turning on these flags (`#define  SERIAL_ENABLE` and `#define  MIDI_DEBUG`at the beginning of *Bhoreal.h*). 
+
+You can see the available serial commands in the image.
 
 
 <a name="com-midi"></a>
 MIDI 
 ---
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_MIDI-table.jpg)
 
 The MIDI communication is a specific serial protocol which were started to use in the 80’s, to communicate among digital musical instruments. The MIDI protocol has many followers maintaining the compatibility with the most of audio/video softwares in real time. 
 
@@ -192,9 +195,9 @@ The MIDI in Bhoreal is *Compliant USB MIDI*. This means it works with a standard
 
 The compatibility of Bhoreal with *MIDI USB Compliant*, unlike to Arduino, is because of the use of a specific *Hardware Core* that enables the MIDI functions on the firmware. For that, we’ve relied on the open source project ARCORE. Check out the installation section of [programming environment](#code) for more information.  
 
-Next, we will show the available MIDI commands:
+You can see the available MIDI commands in the image.
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_MIDI-table.jpg)
+
 
 
 <a name="hardware"></a>
@@ -334,31 +337,27 @@ Features:
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_layout.jpg)
 
 <a name="scheme"></a>
-## Schematics
-
-You can produce your own Bhoreal board if you want, and build a DIY one completely by your hand. The required files to do it can be found [here](https://github.com/bhoreal/bhoreal/tree/master/hardware/Bhoreal%20Mini%20Slim%20Schematics).
+## Schematics (Eagle foñe)
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics_1.png)
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics_2.png)
 
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
+You can produce your own Bhoreal board if you want, and build a DIY one completely by your hand. The required files to do it can be found [here](https://github.com/bhoreal/bhoreal/tree/master/hardware/Bhoreal%20Mini%20Slim%20Schematics).
 
-<a name="eagle"></a>
-## Eagle file
-
-![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_eagle.jpg)
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
+
 
 <a name="slim"></a>
+
 Slim
 ---
 
-<a name="scheme"></a>
-## Schematics
 
-The files needed for build a Bhoreal Slim board can be found [here](https://github.com/bhoreal/bhoreal/tree/master/hardware/Bhoreal%20Slim%20Pro%20Schematics).
+
+<a name="scheme"></a>
+## Schematics (Eagle File)
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_1.jpg)
 
@@ -375,6 +374,9 @@ The files needed for build a Bhoreal Slim board can be found [here](https://gith
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_7.jpg)
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slimpro_schematics_8.jpg)
+
+The files needed for build a Bhoreal Slim board can be found [here](https://github.com/bhoreal/bhoreal/tree/master/hardware/Bhoreal%20Slim%20Pro%20Schematics).
+
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_cc-by-nc-sa-eu.png)
 
@@ -508,9 +510,6 @@ As said in [firmware](#firmware) section, Bhoreal is based on "Arduino Leonardo"
 For correct compilation, see FLAGS settings at [Libraries](#libraries) (*bhoreal.h*).
  
 ### Bhoreal.ino
-
-Here we have a simple set of functions that call the huge ones from the libraries.
-
 ```
 #include <Arduino.h>
 #include "Bhoreal.h"
@@ -537,6 +536,8 @@ void loop () {
   Bhoreal.checkADC();
 }
 ```
+
+Here we have a simple set of functions that call the huge ones from the libraries.
 
 <a name="libraries"></a>
 ## Libraries
@@ -572,10 +573,6 @@ The remaining code corresponds to the definition of functions that make Bhoreal 
 
 coming soon!
 
-## Atributions
----
-coming soon!
-
 
 Software
 =====
@@ -584,29 +581,22 @@ Software
 
 ### Bhoreal Router
 
+![Bhoreal MAX Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_maxmidiosc_router.png)
+
+![Bhoreal MAX Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_maxrouter1.png)
+
 A patch in MAX that takes the incoming MIDI messages from Bhoreal, turn them into OSC and send them from the selected port; the same way it takes the OSC messages received in a chosen port, and send the corresponding MIDI to Bhoreal.
 
 [Bhoreal MAX MIDI-OSC Router at github](https://github.com/bhoreal/bhoreal/blob/master/software/MAX/MIDI-OSC_Router/Bhoreal_MIDI-OSC_com.maxpat)
 
-![Bhoreal MAX Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_maxmidiosc_router.png)
-
-There is also a router patch that works with the [serial](#com-serial) communication. This needs the serial flags to be true.
+There is also a router patch that works with the [serial](#com-serial) communication (second image). This needs the serial flags to be true.
 
 [Bhoreal MAX Serial Router at github](https://github.com/bhoreal/bhoreal/tree/master/software/MAX/Bhoreal_MAX_router)
 
-![Bhoreal MAX Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_maxrouter1.png)
 
 ## Processing
 
 ### Bhoreal Router
-
-A Processing sketch that takes MIDI from Bhoreal and sends OSC wherever you want by a selected port, and also does the inverse way.
-
-It comes with a small graphic interface that shows the incoming MIDI data on the left matrix + slider and offers the posibility of sending MIDI on the right matrix + slider.
-
-[Bhoreal Processing Router at github](https://github.com/bhoreal/bhoreal/tree/master/software/Processing/Bhoreal_MIDI_OSC_com)
-
-Between all the code for setup, communication and graphic help, this are the important functions:
 
 ```
 // if OSC is received
@@ -644,21 +634,40 @@ void controllerChange(ControlChange change) {
 }
 ```
 
+A Processing sketch that takes MIDI from Bhoreal and sends OSC wherever you want by a selected port, and also does the inverse way.
+
+It comes with a small graphic interface that shows the incoming MIDI data on the left matrix + slider and offers the posibility of sending MIDI on the right matrix + slider.
+
+[Bhoreal Processing Router at github](https://github.com/bhoreal/bhoreal/tree/master/software/Processing/Bhoreal_MIDI_OSC_com)
+
+Between all the code for setup, communication and graphic help, you can check the important functions here.
+
 ### Bhoreal Emulator
+
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_emulatorPDE.png)
 
 A Processing sketch that emulates the Bhoreal SLIM, where you can press the pads and see the sended OSC messages. Needs [serial](#com-serial) communication to be activated.
 
 [Bhoreal Emulator at github](https://github.com/bhoreal/bhoreal/tree/master/software/Processing/bhorealEmulator)
 
-![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_emulatorPDE.png)
-
 ## Pure Data
+
+### Bhoreal MIDI-OSC Router
+![Bhoreal PD Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_pdmidiosc_router.png)
 
 A patch in PD that takes the incoming MIDI messages from Bhoreal, turn them into OSC and send them from the selected port; the same way it takes the OSC messages received in a chosen port, and send the corresponding MIDI to Bhoreal.
 
 [Bhoreal PureData MIDI-OSC Router at github](https://github.com/bhoreal/bhoreal/blob/master/software/MAX/MIDI-OSC_Router/Bhoreal_MIDI-OSC_com.maxpat)
 
-![Bhoreal PD Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_pdmidiosc_router.png)
+### Bhoreal Step Sequencer
 
-Case
-=====
+![Bhoreal PD Router](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_pdstepsequencer.png)
+
+A small program y PD that runs a step sequencer over the 16 patches, following a selected BPM.
+The light traveling along the pads indicates the step. You can press any patch and get light feedback.
+
+In the program the MIDI triggers a *snare* sound, just for test. There principal aim of the PD patch is to send OSC, as it does.
+
+You are free to implement a MIDI-clock-sync system (you can use the object [midiinrealtime]) and add funcionality for get 32 and 64 steps (2 and 4 beats).
+
+[Bhoreal PureData Step Sequencer at github](https://github.com/bhoreal/bhoreal/blob/master/software/PureData/Bhoreal_Step_Sequencer.pd)
