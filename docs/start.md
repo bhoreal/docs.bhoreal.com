@@ -206,11 +206,13 @@ Hardware
 Mini
 ---
 
-The first image corresponds to the top of the board.
-
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_front.jpg)
 
+The first image corresponds to the top of the board.
+
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back.jpg)
+
+The second one to the bottom of the board.
 
 <a name="microcontroller"></a>
 ## Microcontroller
@@ -404,12 +406,12 @@ void loop () {
 ## Uploading (Programming Tutorial)
 ---
 
+![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_01.jpg)
+
 Each one of the following pictures responds to a point of the tutorial, in the same order. First picture shows what poin 1 tells, the second one for point 2, etc.
 
 - 1. **Connect the ISP programmer to the computer**
 Go to device administrator panel and check the device. See picture. In Windows7 the correct driver is not installed, so it’s necesary to do it before to connect.
-
-![Bhoreal Firmware Uploading](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_firmwaretut_01.jpg)
 
 - 2. **Update controller**
 Go to properties and click the update controller button.
