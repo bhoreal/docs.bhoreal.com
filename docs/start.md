@@ -561,7 +561,7 @@ The remaining code corresponds to the definition of functions that make Bhoreal 
 
 ### Bhoreal.cpp
 
-As an overview of the main functions that loops in the Bhoreal
+As an overview of the main functions that loops in the Bhoreal Arduino's program.
 
 
 `Bhoeal.begin(BAUD)`
