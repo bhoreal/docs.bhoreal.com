@@ -563,44 +563,30 @@ The remaining code corresponds to the definition of functions that make Bhoreal 
 
 As an overview of the main functions that loops in the Bhoreal
 
-```
-Bhoreal.begin(BAUD);
-```
-*Bhoeal.begin()*
+
+`Bhoeal.begin(BAUD)`
 
 Starts the communiaction between the Bhoreal and the computer, and other functionalities.
 - Sets the configuration (`INPUT`/`OUTPUT`) of the Arduino's pins, depending on which model.
 - Starts the LEDs.
 - Starts Serial caommunication (if the flag indicate it).
 
-```
-Bhoreal.startup();
-```
-*Bhoreal.startup()*
+`Bhoreal.startup()`
 
 Makes the initial led animation
 
-```
-Bhoreal.midiRefresh();
-```
-*Bhoreal.midiRefresh()*
+`Bhoreal.midiRefresh()`
 
 Checks for the incoming MIDI (or Serial, if chosen) and updates the color from the pads.
 
 
-```
-Bhoreal.checkButtons();
-```
-*Bhoreal.checkButtons()*
+`Bhoreal.checkButtons()`
 
 Sends to the computer the info about any pressing and unpressing action on the buttons.
 This takes place by reading the state of all the pads, and calling the funcitons `Bhoreal::on_press()` and `Bhoreal::on_release()`, depending on the state, which send the corresponding MIDI message with `MIDIEvent` and ` MIDIUSB.USB()`.
 
 
-```
-Bhoreal.checkADC();
-```
-*Bhoreal.checkADC()*
+`Bhoreal.checkADC()`
 
 The same way as the *checkButtons* function, this one reads the Slider as an analog input, and sends de MIDI of it's position.
 
