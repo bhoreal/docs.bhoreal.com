@@ -214,7 +214,7 @@ The first image corresponds to the top of the board.
 
 The second one to the bottom of the board.
 
-<a name="microcontroller"></a>
+<a name="microcontrollerMini"></a>
 ## Microcontroller
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_back_microcontroller.jpg)
@@ -339,7 +339,7 @@ Features:
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_layout.jpg)
 
-<a name="scheme"></a>
+<a name="schemeMini"></a>
 ## Schematics (Eagle file)
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_mini_schematics_1.jpg)
@@ -366,7 +366,127 @@ The 64 pads version of the Bhoreal Mini.
 
 The top and bottom of the board.
 
-<a name="scheme"></a>
+<a name="microcontrollerSlim"></a>
+## Microcontroller
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slim_board-microcontrollers.jpg)
+
+The Bhoreal Mini Slim uses two microcontrollers for its processing power. The small one is the same as used in Bhoreal Mini, the ATmega32U4, and again you can download the datasheet [here](http://www.atmel.com/Images/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Summary.pdf). 
+
+The big one is the ATmega328, more powerfull and corresponds with the one the Arduino UNO uses. The datasheet can be checked [here](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42735-8-bit-AVR-Microcontroller-ATmega328-328P_Datasheet.pdf)
+
+Some key features from ATmega32U4:
+
+- 16Mhz operating frequency
+- 12 KB of Flash memory
+- 8-bit AVR
+- 2.5 KB of SRAM
+- 10 bit ADC
+- USB 2.0 full-speed interface
+- USART, SPI and I2C interfaces
+- JTAG Debug mode
+
+And some key features from ATmega328:
+
+- 20Mhz operating frequency
+- 32 KB of Flash memory
+- 8-bit AVR
+- 2 KB of SRAM
+- 10 bit ADC
+- USART, SPI and I2C interfaces
+
+<a name="icspSlim"></a>
+## ICSP
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slim_board-iscp.jpg)
+
+The connector *In Circuit Serial Programming* or commonly called ICSP allows to reprogram both microcontroller ATmega32U4 and ATmega328 from a compatible external programmer, and that is why in the Slim model appear two ICPSs. This method allows to restore the device bootloader completely or update it, if it’s necessary. 
+
+<a name="ledsSlim"></a>
+## LEDs 
+
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slim_board-top_led.jpg)
+
+Same as Bhoreal Mini, 64 for this one.
+
+Bhoreal Slim incorporates 64 SMD RGB digital LEDs, 2 yellow LEDs for signals and another 3 red and blue LEDs for power and communication indication. In case of RGB digital LED, the used model is the WS2812 with 6 pins. They stand out because of the use of the control chip wS2811, embed within the LED, simplifying a lot the external electronics and the space the boards occupy. 
+This type of digital LEDs are waterfall direccionables. The data is transferred one by one through the DIN and DOUT pins, which work as a high-speed serial port, so, for the control of microcontroller, it only needs a data pin.
+The data refresh frequency is 800Kbps. The power for the LEDs and the control chip is splitted, and that allows a very fast multiplexing of the LEDs, therefore, an optimization of energy consumption.
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slim_leds.jpg)
+
+There are also two yellow LEDs on the Board to show the state of serial and MIDI communication port (they can't be seen with the case assembled); an other red LED that gets illuminated when Bhoreal is charging, and a last 2 blue LEDs for wi-fi indications purpouse. The light from the last three mentioned LEDs is visible on one side of the Bhoreal.
+
+You can download the datasheet [here](http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Components/LED/WS2812.pdf).
+
+Features:
+
+- Viewing angle: 120 degrees
+- Red: (620-630nm) @ 550-700mcd
+- Green: (515-530nm) @ 1100-1400mcd
+- Blue: (465-475nm) @ 200-400mcd
+
+Forward Voltage: 
+
+- Red: 1.8-2.2V
+- Green: 3.0-3.2V
+- Blue: 3.2-3.4V
+
+<a name="usbportSlim"></a>
+## USB port
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slim_board-lateral_usb.jpg)
+
+Bhoreal Slim has a Micro USB connector that enables the connectivity between the device and the USB communication port. Simply connect it to a computer with a micro USB cable to get started.
+
+<a name="padsSlim"></a>
+## Pads
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slim_board-top_pad.jpg)
+
+Same as Bhoreal Mini, 64 pads now.
+
+The translucent silicon keypad has 16 buttons and is based on the original design of Sparkfun, and considering the perfect function with SMD WS2812 LED which are used for the Bhoreal board.
+Each one of the buttons has a conductive ring at the bottom that works as a switch when the conductive surfaces of the PCB is slightly pressed. 
+
+There are two keypad models adapted the different type of LEDs. 
+
+
+<a name="resetSlim"></a>
+## Reset
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slim_board-lateral_buttons.jpg)
+
+The Reset push button allows to reset the microcontroller and to reboot the firmware. This button activates the Reset circuit which is 100% compatible with Arduino Leonardo. 
+
+<a name="progBtnSlim"></a>
+## Programmable Button
+
+Next to the reset button, there is a "free" button you can program to do whatever you want. This button needs to be programmed by firmware. By default it has no action setted up, you will need to add the functions in the Bhoreal Arduino an C++. There is further information about the code in the [programming environment](#code) section.
+
+<a name="batterySlim"></a>
+## Battery
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slim_board-lateral_battery.jpg)
+
+The Bhoreal Slim Pro model outstands for being wireless, using a chargeable lithium battery. It's placed over the bottom of the case, below the board, and connects to it. 
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slim_board-lateral_charg.jpg)
+
+The charging of the battery goes through the board by the connector you can see in the image. A red LED illuminates on the side of the Bhoreal confirming the charging.
+
+<a name="wiflySlim"></a>
+## Wi-Fi
+
+![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slim_board-wifi.jpg)
+
+The Bhoreal Slim Pro model also has wi-fi for wireless communication, through the *Wifly* RN131 module.
+The RN131is a 80.11 b7g Wi-Fi module, low comsuption and embedded TCP/IP. 
+
+You can download the datasheet [here](http://ww1.microchip.com/downloads/en/DeviceDoc/rn-131-ds-v3.2r.pdf). 
+
+<a name="schemeSlim"></a>
 ## Schematics (Eagle File)
 
 The files needed for build a Bhoreal Slim board can be found [here](https://github.com/bhoreal/bhoreal/tree/master/hardware/Bhoreal%20Slim%20Pro%20Schematics).
