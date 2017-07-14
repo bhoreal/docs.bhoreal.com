@@ -453,15 +453,16 @@ Each one of the buttons has a conductive ring at the bottom that works as a swit
 There are two keypad models adapted the different type of LEDs. 
 
 
-<a name="resetSlim"></a>
-## Reset
+<a name="buttonsSlim"></a>
+## Buttons
+
+### Reset
 
 ![Bhoreal](https://raw.githubusercontent.com/bhoreal/docs.bhoreal.com/master/docs/images/bhoreal_slim_board-lateral_buttons.jpg)
 
 The Reset push button allows to reset the microcontroller and to reboot the firmware. This button activates the Reset circuit which is 100% compatible with Arduino Leonardo. 
 
-<a name="progBtnSlim"></a>
-## Programmable Button
+### Programmable Button
 
 Next to the reset button, there is a "free" button you can program to do whatever you want. This button needs to be programmed by firmware. By default it has no action setted up, you will need to add the functions in the Bhoreal Arduino an C++. There is further information about the code in the [programming environment](#code) section.
 
